@@ -1,0 +1,207 @@
+/* Root Variables */
+:root {
+    --nav-color: #020002;
+    --text-color-white: #ffffff;
+    --text-color-black: #000000;
+    --span-and-btn-color: #EB8F44;
+    --p-color: #766E67;
+    }
+
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    }
+
+a {
+    text-decoration: none;
+    color: inherit;
+    }
+
+li {
+    list-style: none;
+    }
+
+span {
+    color: var(--span-and-btn-color);
+    }
+
+.clear {
+    clear: both;
+    }
+
+/* Global Styles */
+body {
+    background-color: #f0f0f0;
+    }
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    }
+
+.nav-bgcolor {
+    background-color: var(--nav-color);
+    }
+
+.text-color-white {
+    color: var(--text-color-white);
+    }
+
+.text-color-black {
+    color: var(--text-color-black);
+    }
+
+.p-color {
+    color: var(--p-color);
+    }
+
+.padding-top-bottom {
+    padding: 2% 0;
+    }
+
+    .margin-top-bottom {
+    margin: 2% auto;
+    }
+
+.hr-style {
+    width: 20%;
+    border: none;
+    border-top: 1px solid;
+    margin: 3% 0;
+    }
+
+.UPPERCASE {
+    text-transform: uppercase;
+    }
+
+.capitalize {
+    text-transform: capitalize;
+    }
+
+.hero-overlay {
+    background-color: #0000004b;
+    color: white;
+    height: 100%;
+    padding: 12% 0;
+    }
+
+/* Navigation */
+nav h1 {
+    font-size: 35px;
+    display: inline-block;
+    }
+
+nav h1 span {
+    font-weight: lighter;
+    }
+
+nav ul {
+    float: right;
+    margin-top: 1%;
+    }
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+    }
+
+nav ul li a:hover {
+    color: var(--span-and-btn-color);
+    }
+
+/* Hero Section */
+.hero-section {
+    background-image: url('../images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    }
+
+.hero-content,
+.form-section {
+    display: inline-block;
+    vertical-align: top;
+    }
+
+.hero-content {
+    width: 40%;
+    }
+
+.hero-content h1 {
+    font-size: 4vw;
+    }
+
+.hero-content h4 {
+    font-size: 2vw;
+    }
+
+.hero-content p {
+    font-size: 1.2vw;
+    margin-bottom: 3%;
+    }
+
+.download-btn {
+    padding: 3% 5%;
+    border: 2px solid var(--text-color-white);
+    background-color: transparent;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    color: var(--text-color-white);
+}
+
+    /* Form Section */
+.form-section {
+    width: 30%;
+    background-color: var(--text-color-white);
+    color: var(--text-color-black);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    float: right;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+.form-content {
+    padding: 5%;
+}
+
+.form-content h2 {
+    font-size: 18px;
+    margin-bottom: 10%;
+    text-align: center;
+}
+
+.form-content input {
+    width: 100%;
+    padding: 5%;
+    margin: 4% 0;
+    border: none;
+    border-bottom: solid 1px var(--span-and-btn-color);
+    background-color: transparent;
+    font-size: 1vw;
+}
+
+.form-content input:focus {
+    outline: none;
+}
+
+.btn {
+    background-color: var(--span-and-btn-color);
+    display: inline-block;
+    width: 100%;
+    padding: 4% 0;
+    border: 1px solid var(--span-and-btn-bgcolor);
+    color: white;
+    font-weight: bold;
+    font-size: 1vw;
+    cursor: pointer;
+    /* border-top: 1px solid #eee; */
+    border-radius: 0 0 8px 8px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #cf7733;
+}
