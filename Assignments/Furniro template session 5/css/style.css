@@ -1,0 +1,813 @@
+/* Root Variables */
+:root {
+    --nav-color: #ffffff;
+    --text-color-white: #ffffff;
+    --text-color-black: #000000;
+    --card-bgcolor: #FFF3E3;
+    --card-text-color-and-btn: #B88E2F;
+    --p-color: #766E67;
+    }
+
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    }
+
+.clear {
+    clear: both;
+    }
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+/* Global Styles */
+html {
+    scroll-behavior: smooth;
+    }
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    }
+
+.nav-bgcolor {
+    background-color: var(--nav-color);
+    }
+
+.text-color-white {
+    color: var(--text-color-white);
+    }
+
+.text-color-black {
+    color: var(--text-color-black);
+    }
+
+.card-text-color-and-btn {
+    color: var(--card-text-color-and-btn);
+    }
+
+.p-color {
+    color: var(--p-color);
+    }
+
+.padding-top-bottom {
+    padding: 2% 0;
+    }
+
+.margin-top-bottom {
+    margin: 1% auto;
+    }
+
+.margin-left-right {
+    margin: 0 5%;
+    }
+
+.margin-left-right-for-cards{
+    margin: 0 2%;
+    }
+
+.redius2pers {
+    border-radius: 2%;
+    }
+
+
+.float-left{
+    float: left;
+    }
+
+.float-right{
+    float: right;
+    }
+
+
+.UPPERCASE {
+    text-transform: uppercase;
+    }
+
+.capitalize {
+    text-transform: capitalize;
+    }
+
+.sections-heading{
+    text-align: center;
+    margin: 5% 0;
+    padding-bottom:5% ;
+}
+.text-center {
+    text-align: center;
+    }
+
+
+.hero-overlay {
+    background-color: #0000004b;
+    color: white;
+    height: 100%;
+    padding: 12% 0;
+    }
+
+
+/* Navigation */
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+.logo {
+    width: 20%;
+    padding: 1%;
+}
+
+.nav-menu {
+    width: 50%;
+    list-style: none;
+    text-align: center;
+    padding: 2% 0;
+}
+
+.nav-menu li {
+    display: inline-block;
+    margin-right: 5%;
+}
+
+.nav-icons {
+    width: 20%;
+    list-style: none;
+    text-align: right;
+    padding: 2% 0;
+}
+
+.nav-icons li {
+    display: inline-block;
+}
+
+
+nav .nav-icons i {
+    font-size: 18px;
+    margin-left: 20px;
+    color: var(--text-color-black);
+    transition: all 0.3s ease-in-out;
+    }
+nav .nav-icons i:hover {
+    color: var(--card-text-color-and-btn);
+    }
+
+
+    nav .nav-menu a{
+    color: var(--text-color-black);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 15% 0; 
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    } 
+
+nav ul li a:hover {
+    color: var(--card-text-color-and-btn);
+    }
+
+/* Hero Section */
+.hero{
+    position: relative;
+}
+.hero .hero-bg img{
+    width: 100%;
+    height: 88.23%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero .hero-card {
+    background-color: var(--card-bgcolor);
+    position: absolute;
+    width: 44.65%;
+    height: 54.53%;
+    top: 31.14%;
+    left: 51.32%;
+    border-radius: 10px;
+    /* margin-bottom: 5%; */
+}
+.hero .hero-content {
+    padding: 10%;
+}
+
+.hero .hero-content h1 {
+    font-size: 53px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 2px;
+}
+
+.hero .hero-content h6 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 3px;
+    margin-bottom: 2%;
+}
+.hero .hero-content p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0px;
+    margin: 5% 0 12% 0;
+}
+
+.hero .hero-content a {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    background-color: var(--card-text-color-and-btn);
+    color: var(--text-color-white);
+    padding: 5% 12%;
+    text-decoration: none;
+    /* margin: 10% 0; */
+    transition: all 0.3s ease-in-out;
+}
+.hero .hero-content a:hover {
+    background-color: var(--text-color-white);
+    color: var(--card-text-color-and-btn);
+}
+/* End Hero Section */
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* Browse-Range Section */
+.browse-range-section{
+    padding: 2% 0;
+}
+.browse-range-content h2{
+    margin-bottom: 1%;
+    padding-bottom: 0;
+}
+.browse-range-content p{
+    margin-bottom: 5%;
+}
+
+.browse-range-content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* padding-bottom: 5%; */
+}
+
+.browse-range-content .browse-range-card {
+    position: relative;
+    width: 31%;
+    height: 100%;
+    margin: 0 1%;
+    float: left;
+}
+
+.browse-range-content .browse-range-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    } 
+
+.browse-range-content .browse-range-cards{
+    margin-bottom: 5%;
+    width: 100%;
+    height: 100%;
+    /* position: relative; */
+}
+/* End Browse-Range Section */
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* Product Section */
+.product-section{
+    padding: 2% 0;
+}
+.product-section h2{
+    margin-bottom: 1%;
+}
+.product-section p{
+    margin-bottom: 5%;
+}
+
+.product-cards{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 5%;
+}
+
+.product-cards .product-card {
+    position: relative;
+    width: 23%;
+    height: 100%;
+    margin: 0 1%;
+    float: left;
+}
+
+.product-cards .product-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    } 
+.product-cards .product-card h3{
+    margin: 2% 0 2% 2%;
+}
+.product-cards .product-card .product-card-old-price{
+    margin-left: 7%;
+    font-size: small;
+    text-decoration: line-through;
+}
+.product-cards .product-card p{
+    margin-left: 2%;
+}
+
+.product-cards .product-card {
+    background: #F4F5F7;
+    padding-bottom: 2%;
+    margin-bottom: 2%;
+}
+
+.product-cards .product-card .sm-red-circle-card{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    background-color: #E97171;
+    padding: 7% 5%;
+    color: white;
+    border-radius: 100%;
+    }
+
+    .product-cards .product-card .sm-green-circle-card{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    background-color: #2EC1AC;
+    padding: 7% 6%;
+    color: white;
+    border-radius: 100%;
+    }
+
+/* product show more button */
+.show-more-button{
+    text-align: center;
+    padding: 6% 0;
+    /* margin: 1% 0; */
+}
+ .show-more-btn{
+    padding: 1% 5%;
+    background-color: transparent;
+    border: solid 2px var(--card-text-color-and-btn);
+    color: var(--card-text-color-and-btn);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+ .show-more-btn:hover{
+    background-color: var(--card-text-color-and-btn);
+    border: solid 2px var(--card-text-color-and-btn);
+    color: var(--text-color-white);
+}
+
+/* product card overlay */
+.card-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.39);
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: none;
+    padding: 15% 3%;
+    z-index: 2;
+    }
+    .product-cards .product-card:hover .card-overlay {
+        display: block;
+    }
+    
+    .card-overlay-content{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 30%;
+        
+    }
+    .card-overlay-content .ovrlay-btn{
+        text-decoration: none;
+        display: block;
+        margin: 9% 0;
+        color: var(--card-text-color-and-btn);
+        background-color: var(--text-color-white);
+        padding: 5% 2%;
+        text-align: center;
+        transition: all 0.3s ease-in-out
+    }
+    
+    .card-overlay-content .ovrlay-btn:hover{
+        background-color: var(--card-text-color-and-btn);
+        color: var(--text-color-white);
+    }
+    
+    .card-overlay-content i{
+        margin-right: 26%;
+        font-size: 10px;
+    }
+/* End Product Section */
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* rooms-inspiration-section */
+.rooms-inspiration-section{
+    width: 100%;
+    height: 100%;
+    padding: 5% 0;
+    background-color: var(--card-bgcolor);
+}
+
+.rooms-inspiration-content{
+    width: 33%;
+    height: 100%;
+    vertical-align: middle;
+    padding: 14% 0; 
+}
+
+.rooms-inspiration-content h2{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    margin-bottom: 1%;
+    
+}
+.rooms-inspiration-content p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 5%;
+}
+
+.rooms-inspiration-content .show-more-btn{
+    padding: 3% 8%;
+    background-color: var(--card-text-color-and-btn);
+    border: solid 2px var(--card-text-color-and-btn);
+    color: var(--text-color-white);
+
+}
+.rooms-inspiration-content .show-more-btn:hover{
+    border: solid 2px var(--card-text-color-and-btn);
+    background-color: transparent;
+    color: var(--card-text-color-and-btn);
+}
+/* End rooms-inspiration-section */
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* furniro-share-section */
+.furniro-share-section{
+    width: 100%;
+    height: 100%;
+    padding: 10% 0;
+}
+.furniro-share-section img{
+    width: 100%;
+    height: 100%;
+}
+/* End furniro-share-section */
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* style single-product html page */
+/* ==== Breadcrumb ==== */
+.breadcrumb {
+    margin-bottom: 2%;
+    font-size: 1vw;
+    color: #7d7d7d;
+    background-color: antiquewhite;
+    padding: 2%;
+}
+
+/* ==== الصفحة الرئيسية ==== */
+.product-page {
+    width: 100%;
+    overflow: hidden;
+    background: #ffffff;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+/* ==== معرض الصور ==== */
+.image-gallery {
+    width: 5%;
+    float: left;
+    text-align: center;
+}
+
+.thumbnail {
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+.thumbnail img {
+    width: 100%;
+    border-radius: 10px;
+    padding: 0;
+    background: transparent;
+}
+
+/* ==== الصورة الرئيسية ==== */
+.main-image {
+    width: 41%;
+    float: left;
+    padding: 0 2%;
+}
+
+.main-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* ==== تفاصيل المنتج ==== */
+.product-details {
+    width: 50%;
+    float: left;
+    font-size: 1vw;
+    color: #000;
+}
+
+.info {
+    width: 50%;
+    float: left;
+    font-size: 1vw;
+    color: #000;
+}
+
+.product-details h2 {
+    font-size: 2.5vw;
+    margin-top: 0;
+    font-weight: bold;
+}
+
+.price {
+    font-size: 1.3vw;
+    margin-bottom: 1%;
+}
+
+.reviews {
+    color: #ffc700;
+    font-size: 1.5vw;
+    margin-bottom: 2%;
+}
+
+.reviews .cust-reviews {
+    font-size: 0.9vw;
+}
+
+/* ==== الوصف ==== */
+.description {
+    font-size: 0.95vw;
+    color: #7d7d7d;
+    line-height: 1.6;
+    margin-bottom: 3%;
+    max-width: 95%;
+}
+
+/* ==== الحجم ==== */
+.size {
+    margin-bottom: 3%;
+}
+
+.size .size-title {
+    margin-bottom: 1%;
+}
+
+.size strong {
+    font-weight: bold;
+    margin-right: 1%;
+}
+
+.size button {
+    background: #F9F1E7;
+    border: 1px solid #F9F1E7;
+    padding: 1% 2.5%;
+    margin-right: 1%;
+    cursor: pointer;
+    font-size: 1vw;
+}
+
+.size button:hover {
+    background: #B88E2F;
+    color: var(--text-color-white);
+}
+
+/* ==== اللون ==== */
+.color {
+    margin-bottom: 6%;
+}
+
+.coloe .color-title {
+    margin-bottom: 1%;
+}
+
+.color strong {
+    font-weight: bold;
+    margin-right: 1%;
+}
+
+.circle {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.purple {
+    background-color: #816dfa;
+}
+.black {
+    background-color: #000;
+}
+.gold {
+    background-color: #d4b07b;
+}
+
+/* ==== الأزرار ==== */
+.actions {
+    margin-bottom: 5%;
+}
+
+.quantity {
+    padding: 2% 4%;
+    border: 1px solid #ccc;
+    background: #fff;
+    font-size: 1vw;
+    margin-right: 0.5%;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.quantity:hover {
+    background-color: #c9c9c9;
+}
+.quantity-num{
+    cursor: text;
+}
+.quantity-num:hover{
+    background-color: #fff;
+}
+
+
+.add-cart,
+.compare {
+    padding: 2.2% 8%;
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    font-size: 1vw;
+    border-radius: 8px;
+    margin-left: 1%;
+    transition: background-color 0.3s ease;
+}
+
+.add-cart:hover,
+.compare:hover {
+    background-color: #c9c9c9;
+}
+
+/* ==== معلومات تحت الأزرار ==== */
+.info {
+    width: 55%; 
+    font-size: 14px;
+    color: #7d7d7d;
+    float: right;
+    clear: both; 
+}
+
+.info p {
+    margin: 10px 0;
+    color: #7d7d7d;
+    font-size: 14px;
+}
+
+.info p strong {
+    display: inline-block;
+    width: 100px;
+    color: #7d7d7d;
+    font-weight: 500;
+}
+
+.info p i {
+    margin-right: 10px;
+    color: #000;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.info p i:hover {
+    color: var(--card-text-color-and-btn);
+}
+
+/* end of style single-product html page */
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* Footer */
+
+.footer {
+    background-color: #fff;
+    padding: 3% 5%;
+    font-family: Arial, sans-serif;
+    font-size: 1vw;
+    color: #000;
+}
+
+.footer-container {
+    width: 100%;
+}
+
+.column {
+    display: inline-block;
+    vertical-align: top;
+    width: 21%;
+    margin-right: 2%;
+}
+
+.left {
+    width: 28%;
+}
+
+.logo {
+    font-size: 1.5vw;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.column h4 {
+    font-weight: bold;
+    font-size: 0.9vw;
+    color: #888;
+    margin-bottom: 1em;
+}
+
+.column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.column ul li {
+    margin-bottom: 0.8em;
+}
+
+.column ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.column ul li a:hover {
+    text-decoration: underline;
+    color: var(--card-text-color-and-btn);
+}
+
+.newsletter form {
+    display: inline-block;
+    width: 100%;
+}
+
+.newsletter input {
+    width: 65%;
+    padding: 0.3em;
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+    font-size: 0.9vw;
+}
+
+.newsletter button {
+    background: none;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.8vw;
+    cursor: pointer;
+    color: #000;
+    border-bottom: 1px solid #000;
+    padding: 0.4em 0.3em;
+}
+
+.newsletter button:hover {
+    color: var(--card-text-color-and-btn);
+}
+
+.footer hr {
+    margin: 3% 0 1%;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+.footer-bottom {
+    text-align: left;
+    font-size: 0.9vw;
+    color: #555;
+}
