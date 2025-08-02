@@ -19,8 +19,8 @@
 
             <!-- links  -->
             <ul class="nav-menu float-left margin-left-right">
-                <li><a href="#hero">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#shop-hero-section">Shop</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
@@ -35,49 +35,169 @@
         </div>
     </nav>
 
-    <section class="hero" id="hero">
-        <div class="hero-bg">
-            <img src="images/hero-secthion-bg.png" alt="">
-            </div>
-            <div class="container hero-card">
-                <div class="hero-content text-color-white">
-                    <h6 class="capitalize text-color-black">new arrival</h6>
-                    <h1 class="capitalize text-color-black card-text-color-and-btn margin-top-bottom">discover our new collection</h1>
-                    <p class="p-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error architecto commodi corporis laudantium illum ducimus.</p>
-                    <a href="#" class="btn UPPERCASE card-text-color-and-btn margin-top-bottom">buy now</a>
-                </div>
+    <section class="shop-hero-section" id="shop-hero-section">
+            <div class="container">
+                <h1 class="capitalize text-center">shop</h1>
+                <p class="text-center">home / shop</p>
             </div>
     </section>
 
-    <section class="browse-range-section">
-        <div class="container">
-            <div class="browse-range-content">
-                <h2 class="text-color-black sections-heading">Browse by Range</h2>
-                <p class="p-color text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <div class="browse-range-cards clearfix">
-                    <div class="browse-range-card float-left">
-                        <img src="images/Mask Group.png" alt="">
-                        <h3 class="text-center capitalize">dining</h3>
-                    </div>
-                    <div class="browse-range-card float-left margin-left-right-for-cards">
-                        <img src="images/Image-living room.png" alt="">
-                        <h3 class="text-center capitalize">living</h3>
-                    </div>
-                    <div class="browse-range-card float-left ">
-                        <img class="redius2pers" src="images/image 101.png" alt="">
-                        <h3 class="text-center capitalize">bedroom</h3>
-                    </div>
+    <section class="toolbar">
+        <div class="container clearfix">
+            <div class="toolbar-left">
+                <button><img src="images/Vector.png" alt=""> Filter</button>
+                <div class="layout-options">
+                    <span class=""><img src="images/Vector2.png" alt=""></span>
+                    <span class=""><img src="images/Vector3.png" alt=""></span>
                 </div>
+                <div class="divider"></div>
+                <span>Showing 1–16 of 32 results</span>
+            </div>
+
+            <div class="toolbar-right">
+                <label for="show">Show</label>
+                <input class="p-color" type="number" id="show" value="16" min="1">
+                <label for="sort">Short by</label>
+                <select class="p-color" id="sort">
+                    <option>Default</option>
+                    <option>Price</option>
+                    <option>Newest</option>
+                </select>
             </div>
         </div>
     </section>
-    
+
     <section class="product-section">    
         <div class="container">
-            <h2 class="capitalize sections-heading">our products</h2>
             
             <div class="product-cards clearfix">
                 
+                    <div class="product-card">
+                        <img src="images/product-img1.png" alt="">
+                        <span class="sm-red-circle-card capitalize">-50%</span>
+                        <h3 class="capitalize">syltherine</h3>
+                        <p class="p-color capitalize">stylish cafe chair</p>
+                        <h3>Rp 2.500.000<span class="p-color product-card-old-price">Rp 3.500.000</span></h3>
+                        <div class="card-overlay">
+                            <div class="card-overlay-content">
+                                <a href="single-prodect.html" class="ovrlay-btn capitalize">show details</a>
+                                <i class="fa-solid fa-share">share</i>
+                                <i class="fa-solid fa-compare">compare</i>
+                                <i class="fa-solid fa-heart">like</i>
+                            </div>
+                        </div>
+                    </div>
+
+                <div class="product-card">
+                        <img src="images/product-img2.png" alt="">
+                        <h3 class="capitalize">leviosa</h3>
+                        <p class="p-color capitalize">stylish cafe chair</p>
+                        <h3>Rp 2.500.000</h3>
+                        <div class="card-overlay">
+                            <div class="card-overlay-content">
+                                <a href="single-prodect.html" class="ovrlay-btn capitalize">show details</a>
+                                <i class="fa-solid fa-share capitalize">share</i>
+                                <i class="fa-solid fa-compare capitalize">compare</i>
+                                <i class="fa-solid fa-heart capitalize">like</i>
+                            </div>
+                        </div>
+                    </div>
+
+                <div class="product-card">
+                        <img src="images/product-img3.png" alt="">
+                        <span class="sm-red-circle-card capitalize">-50%</span>
+                        <h3 class="capitalize">lolito</h3>
+                        <p class="p-color capitalize">stylish cafe chair</p>
+                        <h3>Rp 7.000.000<span class="p-color product-card-old-price">Rp 14.000.000</span></h3>
+                        <div class="card-overlay">
+                            <div class="card-overlay-content">
+                                <a href="single-prodect.html" class="ovrlay-btn capitalize">show details</a>
+                                <i class="fa-solid fa-share capitalize">share</i>
+                                <i class="fa-solid fa-compare capitalize">compare</i>
+                                <i class="fa-solid fa-heart capitalize">like</i>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="product-card">
+                        <img src="images/product-img4.png" alt="">
+                        <span class="sm-green-circle-card capitalize">new</span>
+                        <h3 class="capitalize">respira</h3>
+                        <p class="p-color capitalize">stylish cafe chair</p>
+                        <h3>Rp 500.000</h3>
+                        <div class="card-overlay">
+                            <div class="card-overlay-content">
+                                <a href="single-prodect.html" class="ovrlay-btn capitalize">show details</a>
+                                <i class="fa-solid fa-share capitalize">share</i>
+                                <i class="fa-solid fa-compare capitalize">compare</i>
+                                <i class="fa-solid fa-heart capitalize">like</i>
+                            </div>
+                        </div>
+                </div>
+
+                    <div class="product-card">
+                        <img src="images/product-img1.png" alt="">
+                        <span class="sm-red-circle-card capitalize">-50%</span>
+                        <h3 class="capitalize">syltherine</h3>
+                        <p class="p-color capitalize">stylish cafe chair</p>
+                        <h3>Rp 2.500.000<span class="p-color product-card-old-price">Rp 3.500.000</span></h3>
+                        <div class="card-overlay">
+                            <div class="card-overlay-content">
+                                <a href="single-prodect.html" class="ovrlay-btn capitalize">show details</a>
+                                <i class="fa-solid fa-share">share</i>
+                                <i class="fa-solid fa-compare">compare</i>
+                                <i class="fa-solid fa-heart">like</i>
+                            </div>
+                        </div>
+                    </div>
+
+                <div class="product-card">
+                        <img src="images/product-img2.png" alt="">
+                        <h3 class="capitalize">leviosa</h3>
+                        <p class="p-color capitalize">stylish cafe chair</p>
+                        <h3>Rp 2.500.000</h3>
+                        <div class="card-overlay">
+                            <div class="card-overlay-content">
+                                <a href="single-prodect.html" class="ovrlay-btn capitalize">show details</a>
+                                <i class="fa-solid fa-share capitalize">share</i>
+                                <i class="fa-solid fa-compare capitalize">compare</i>
+                                <i class="fa-solid fa-heart capitalize">like</i>
+                            </div>
+                        </div>
+                    </div>
+
+                <div class="product-card">
+                        <img src="images/product-img3.png" alt="">
+                        <span class="sm-red-circle-card capitalize">-50%</span>
+                        <h3 class="capitalize">lolito</h3>
+                        <p class="p-color capitalize">stylish cafe chair</p>
+                        <h3>Rp 7.000.000<span class="p-color product-card-old-price">Rp 14.000.000</span></h3>
+                        <div class="card-overlay">
+                            <div class="card-overlay-content">
+                                <a href="single-prodect.html" class="ovrlay-btn capitalize">show details</a>
+                                <i class="fa-solid fa-share capitalize">share</i>
+                                <i class="fa-solid fa-compare capitalize">compare</i>
+                                <i class="fa-solid fa-heart capitalize">like</i>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="product-card">
+                        <img src="images/product-img4.png" alt="">
+                        <span class="sm-green-circle-card capitalize">new</span>
+                        <h3 class="capitalize">respira</h3>
+                        <p class="p-color capitalize">stylish cafe chair</p>
+                        <h3>Rp 500.000</h3>
+                        <div class="card-overlay">
+                            <div class="card-overlay-content">
+                                <a href="single-prodect.html" class="ovrlay-btn capitalize">show details</a>
+                                <i class="fa-solid fa-share capitalize">share</i>
+                                <i class="fa-solid fa-compare capitalize">compare</i>
+                                <i class="fa-solid fa-heart capitalize">like</i>
+                            </div>
+                        </div>
+                </div>
+
                     <div class="product-card">
                         <img src="images/product-img1.png" alt="">
                         <span class="sm-red-circle-card capitalize">-50%</span>
@@ -126,6 +246,68 @@
                         </div>
                 </div>
 
+                <div class="product-card">
+                        <img src="images/product-img4.png" alt="">
+                        <span class="sm-green-circle-card capitalize">new</span>
+                        <h3 class="capitalize">respira</h3>
+                        <p class="p-color capitalize">stylish cafe chair</p>
+                        <h3>Rp 500.000</h3>
+                        <div class="card-overlay">
+                            <div class="card-overlay-content">
+                                <a href="single-prodect.html" class="ovrlay-btn capitalize">show details</a>
+                                <i class="fa-solid fa-share capitalize">share</i>
+                                <i class="fa-solid fa-compare capitalize">compare</i>
+                                <i class="fa-solid fa-heart capitalize">like</i>
+                            </div>
+                        </div>
+                </div>
+
+                    <div class="product-card">
+                        <img src="images/product-img1.png" alt="">
+                        <span class="sm-red-circle-card capitalize">-50%</span>
+                        <h3 class="capitalize">syltherine</h3>
+                        <p class="p-color capitalize">stylish cafe chair</p>
+                        <h3>Rp 2.500.000<span class="p-color product-card-old-price">Rp 3.500.000</span></h3>
+                        <div class="card-overlay">
+                            <div class="card-overlay-content">
+                                <a href="single-prodect.html" class="ovrlay-btn capitalize">show details</a>
+                                <i class="fa-solid fa-share">share</i>
+                                <i class="fa-solid fa-compare">compare</i>
+                                <i class="fa-solid fa-heart">like</i>
+                            </div>
+                        </div>
+                    </div>
+
+                <div class="product-card">
+                        <img src="images/product-img2.png" alt="">
+                        <h3 class="capitalize">leviosa</h3>
+                        <p class="p-color capitalize">stylish cafe chair</p>
+                        <h3>Rp 2.500.000</h3>
+                        <div class="card-overlay">
+                            <div class="card-overlay-content">
+                                <a href="single-prodect.html" class="ovrlay-btn capitalize">show details</a>
+                                <i class="fa-solid fa-share capitalize">share</i>
+                                <i class="fa-solid fa-compare capitalize">compare</i>
+                                <i class="fa-solid fa-heart capitalize">like</i>
+                            </div>
+                        </div>
+                    </div>
+
+                <div class="product-card">
+                        <img src="images/product-img3.png" alt="">
+                        <span class="sm-red-circle-card capitalize">-50%</span>
+                        <h3 class="capitalize">lolito</h3>
+                        <p class="p-color capitalize">stylish cafe chair</p>
+                        <h3>Rp 7.000.000<span class="p-color product-card-old-price">Rp 14.000.000</span></h3>
+                        <div class="card-overlay">
+                            <div class="card-overlay-content">
+                                <a href="single-prodect.html" class="ovrlay-btn capitalize">show details</a>
+                                <i class="fa-solid fa-share capitalize">share</i>
+                                <i class="fa-solid fa-compare capitalize">compare</i>
+                                <i class="fa-solid fa-heart capitalize">like</i>
+                            </div>
+                        </div>
+                </div>
 
                 <div class="product-card">
                         <img src="images/product-img4.png" alt="">
@@ -143,96 +325,20 @@
                         </div>
                 </div>
 
-
-                <div class="product-card">
-                        <img src="images/product-img5.png" alt="">
-                        <h3 class="capitalize">grifo</h3>
-                        <p class="p-color capitalize">stylish cafe chair</p>
-                        <h3>Rp 1.500.000</h3>
-                        <div class="card-overlay">
-                            <div class="card-overlay-content">
-                                <a href="single-prodect.html" class="ovrlay-btn capitalize">show details</a>
-                                <i class="fa-solid fa-share capitalize">share</i>
-                                <i class="fa-solid fa-compare capitalize">compare</i>
-                                <i class="fa-solid fa-heart capitalize">like</i>
-                            </div>
-                        </div>
-                </div>
-
-                <div class="product-card">
-                        <img src="images/product-img6.png" alt="">
-                        <span class="sm-green-circle-card capitalize">new</span>
-                        <h3 class="capitalize">muggo</h3>
-                        <p class="p-color capitalize">stylish cafe chair</p>
-                        <h3>Rp 150.000</h3>
-                        <div class="card-overlay">
-                            <div class="card-overlay-content">
-                                <a href="single-prodect.html" class="ovrlay-btn capitalize">show details</a>
-                                <i class="fa-solid fa-share capitalize">share</i>
-                                <i class="fa-solid fa-compare capitalize">compare</i>
-                                <i class="fa-solid fa-heart capitalize">like</i>
-                            </div>
-                        </div>
-                </div>
-
-                <div class="product-card">
-                        <img src="images/product-img7.png" alt="">
-                        <span class="sm-red-circle-card capitalize">-50%</span>
-                        <h3 class="capitalize">pingky</h3>
-                        <p class="p-color capitalize">stylish cafe chair</p>
-                        <h3>Rp 7.000.000<span class="p-color product-card-old-price">Rp 14.000.000</span></h3>
-                        <div class="card-overlay">
-                            <div class="card-overlay-content">
-                                <a href="single-prodect.html" class="ovrlay-btn capitalize">show details</a>
-                                <i class="fa-solid fa-share capitalize">share</i>
-                                <i class="fa-solid fa-compare capitalize">compare</i>
-                                <i class="fa-solid fa-heart capitalize">like</i>
-                            </div>
-                        </div>
-                </div>
-
-
-                <div class="product-card">
-                        <img src="images/product-img8.png" alt="">
-                        <span class="sm-green-circle-card capitalize">new</span>
-                        <h3 class="capitalize">potty</h3>
-                        <p class="p-color capitalize">stylish cafe chair</p>
-                        <h3>Rp 500.000</h3>
-                        <div class="card-overlay">
-                            <div class="card-overlay-content">
-                                <a href="single-prodect.html" class="ovrlay-btn capitalize">show details</a>
-                                <i class="fa-solid fa-share capitalize">share</i>
-                                <i class="fa-solid fa-compare capitalize">compare</i>
-                                <i class="fa-solid fa-heart capitalize">like</i>
-                            </div>
-                        </div>
-                </div>
-
-                <div class="show-more-button">
+                <!-- <div class="show-more-button">
                     <a href="#" class="show-more-btn capitalize">show more</a>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
 
-    <section class="rooms-inspiration-section">
-        <div class="container clearfix">
-            <div class="rooms-inspiration-img float-right">
-                <img src="images/rooms-inspiration-img1.png" alt="">
-                <img src="images/rooms-inspiration-img2.png" alt="">
-            </div>
-            <div class="rooms-inspiration-content float-left">
-                <h2 class="capitalize">50+ beautiful rooms inspiration</h2>
-                <p class="p-color">Our designer already made a lot of beautiful prototype of rooms that inspire you</p>
-                <a href="#" class="show-more-btn capitalize">explore more</a>
+    <section class="our-feature-section">
+        <div class="feature-background-color">
+            <div class="container">
+                    <img src="images/Frame 161.png" alt="">
             </div>
         </div>
     </section>
-
-    <section class="furniro-share-section">
-        <img src="images/funiro-share-img.png" alt="">
-    </section>
-
     <footer class="footer">
         <div class="container footer-container clearfix">
             <div class="column left">
@@ -243,8 +349,8 @@
         <div class="column links">
             <h4>Links</h4>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#shop-hero-section">Shop</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
@@ -275,6 +381,5 @@
             <p class="text-color-black">2023 funiro. All rights reserved</p>
         </div>
     </footer>
-
 </body>
 </html>
