@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* ===== الكلاسات الجينرال ==== */
+
+.width-100 {
+  width: 100%;
+}
+
+.margin-top-bottom {
+  margin: 5% 0;
+}
+
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-around {
+  justify-content: space-around;
+}
+
+/* ===== تنسيقات الكروت ==== */
+
+.container {
+  width: 90%;
+  margin: 0% auto;
+  gap: 2%;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 30%;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 15% auto;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  /* border-left: 5px solid #1877f2; */
+}
+
+.card-img {
+  overflow: hidden;
+}
+
+.card-img img {
+  width: 100%;
+  height: auto;
+  scale: 1.1;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .card-img img {
+  transform: scale(1.2) rotate(3deg);
+}
+
+.card-content {
+  width: 100%;
+}
+
+.card-content-left-side {
+  width: 15%;
+  /* height: 100%; */
+  background-color: black;
+  color: white;
+  padding: 10px 0;
+  flex-direction: column;
+  align-items: center;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.card:hover .card-content-left-side {
+  background-color: #1877f2;
+}
+
+.card-content-left-side li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.card-content-left-side a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.card-content-right-side {
+  width: 85%;
+  padding: 20px;
+}
+
+.card-content-right-side h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.card-content-right-side span {
+  font-size: 0.85rem;
+  color: #555;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.card-content-right-side hr {
+  width: 30%;
+  border: 1px solid #000;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover .card-content-right-side hr {
+  width: 100%;
+  border-color: #1877f2;
+}
+
+.card-content-right-side p {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.card-content-right-side button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #000;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.card-content-right-side button:hover {
+  background-color: #444;
+}
