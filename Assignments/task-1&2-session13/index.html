@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+  <!-- -------------------------------Task One Change Color And Remove From Others------------------------------- -->
+  <p class="h1 text-center "><span class="text-danger">Task 1:</span> Change Color And Remove From Others</p>
+  <ul class="list-unstyled d-flex gap-3 fs-5 fw-bold mt-4 mb-4 justify-content-center text-center">
+        <li onclick="changeColor(this)">home</li>
+        <li onclick="changeColor(this)">about</li>
+        <li onclick="changeColor(this)">contact</li>
+    </ul>
+  <!-- ---------------------------------------------------------------------------------------------------------- -->
+  <hr>
+  <!-- ---------------------------------------Task Two Get Info From Form --------------------------------------- -->
+  <p class="h1 text-center "><span class="text-danger">Task 2:</span> Get Info From Form</p>
+  <form id="loginForm" class="container mt-3 mb-3 w-50 bg-dark p-5 text-white">
+      <div class="mb-3">
+          <p class="h1 text-center">Login Form</p>
+      </div>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Name</label>
+      <input type="text" class="form-control bg-secondary text-white" id="name" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label ">Email address</label>
+      <input type="email" class="form-control bg-secondary text-white" id="email" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control bg-secondary text-white" id="password">
+    </div>
+    <button type="submit" class="btn btn-outline-light mt-5 w-50 mx-auto d-block">Submit</button>
+  </form>
+  <!-- ---------------------------------------------------------------------------------------------------------- -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+    crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
