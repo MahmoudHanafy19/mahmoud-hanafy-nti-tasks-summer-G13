@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nata+Sans:wght@100..900&family=Pinyon+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" 
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" 
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+<body>
+<header>
+  <!-- ===== Top Navbar ===== -->
+  <div class="top-navbar py-2 border-bottom d-flex justify-content-between gap-5">
+      <div class="container-fluid d-flex justify-content-between align-items-center flex-wrap">
+      
+      <!-- Left: Logo  -->
+          <div class="d-flex align-items-center flex-wrap p-4">
+            <a href="index.html">
+              <img class="me-3" src="images/imgi_5_logo.png" alt="" width="150">
+            </a>
+          </div>
+        
+      <!-- Middle: Contact + Search Bar -->
+          <div class="top-navbar-contact d-flex align-items-center">
+              <i class="bi bi-telephone me-2 fs-5"></i>
+              <div>
+                  <small>Contact us 24/7</small><br>
+                  <strong>(+92) 3942 7879</strong>
+              </div>
+          </div>
+          <form class="d-flex search-bar my-2 my-lg-0">
+              <select class="form-select me-2" style="max-width: 150px;">
+                  <option>All Categories</option>
+                  <option>Electronics</option>
+                  <option>Fashion</option>
+              </select>
+              <span></span>
+              <input class="form-control me-2" type="search" placeholder="Search for products">
+              <button class="btn btn-dark"><i class="bi bi-search"></i></button>
+          </form>
+        
+      <!-- Right: Language, Currency, Icons -->
+      <div class="d-flex align-items-center flex-wrap">
+        <div class="dropdown me-3">
+          <a class="dropdown-toggle text-decoration-none text-dark" href="#" id="langMenu" data-bs-toggle="dropdown">
+            <img src="images/imgi_1_english.png" alt=""> English
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"><img src="images/imgi_1_english.png" alt=""> English</a></li>
+            <li><a class="dropdown-item" href="#"><img src="images/imgi_2_espanol.png" alt=""> Español</a></li>
+            <li><a class="dropdown-item" href="#"><img src="images/imgi_3_francais.png" alt=""> Français</a></li>
+            <li><a class="dropdown-item" href="#"><img src="images/imgi_4_portugues.png" alt=""> Português</a></li>
+          </ul>
+        </div>
+        <div class="dropdown me-3">
+          <a class="dropdown-toggle text-decoration-none text-dark" href="#" id="currencyMenu" data-bs-toggle="dropdown">
+            USD
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">USD</a></li>
+            <li><a class="dropdown-item" href="#">EUR</a></li>
+          </ul>
+        </div>
+        <a href="#" class="me-3 text-dark"><i class="bi bi-person"></i> Account</a>
+        <a href="#" class="position-relative me-3 text-dark">
+          <i class="bi bi-heart"></i>
+          <span class="badge bg-danger rounded-circle position-absolute top-0 start-100 translate-middle">0</span>
+        </a>
+        <a href="#" class="position-relative text-dark">
+          <i class="bi bi-cart"></i>
+          <span class="badge bg-danger rounded-circle position-absolute top-0 start-100 translate-middle">0</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  
+  <!-- ===== Main Navbar ===== -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <div class="d-flex">
+      <button class="btn me-2 list-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+        <i class="bi bi-list"></i> SHOP BY CATEGORIES
+      </button>
+      <!-- <button class="btn  me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+        <i class="bi bi-list me-2"> SHOP BY CATEGORIES</i></button> -->
+
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdroped with scrolling</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body ">
+          <p>Try scrolling the rest of the page to see this option in actionsss.</p>
+        </div>
+      </div>
+    
+      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+    
+      <div class="d-flex main-nav-link" id="mainNav">
+        <ul class="d-flex flex-row gap-3 navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active text-danger" href="#" data-bs-toggle="dropdown">Homepages</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Home 1</a></li>
+              <li><a class="dropdown-item" href="#">Home 2</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Categories</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Category 1</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="product.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Pages</a></li>
+          <li class="nav-item"><a class="nav-link" href="contactus.html">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Best Discount</a></li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle main-nav-link" href="#" data-bs-toggle="dropdown">Recently viewed</a>
+            <ul class="dropdown-menu main-nav-link">
+              <li><a class="dropdown-item" href="#">Product 1</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="hero-section h-100% mb-2">
+    <div class="row g-0">
+      <div class="col-12 col-lg-8">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item-img1 carousel-item active">
+              <img src="images/imgi_87_slide1-demo1.jpg" class="d-block w-100" alt="..." height="550px" >
+            </div>
+            <div class="carousel-item-img2 carousel-item">
+              <img src="images/imgi_88_slide2-demo1.jpg" class="d-block w-100" alt="..." height="550px">
+            </div>
+            <div class="carousel-item-img3 carousel-item">
+              <img src="images/imgi_89_slide3-demo1.png" class="d-block w-100" alt="..." height="550px">
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="small-cards col-12 col-lg-4">
+        <div class="card  text-white rounded-0">
+          <img src="images/imgi_19_banner1-mobile-demo1.jpg" class="card-img rounded-0" alt="..." height="273.5px">
+          <div class="card-img-overlay d-flex flex-column align-items-start text-dark gap-1 p-4">
+            <h5 class="card-title fs-6">BLACK FRIDAY</h5>
+            <p class="card-text h1 fw-bold w-50">Big Sale Eyeshadow</p>
+            <p class="card-text h5 fs-6">Over +100 items</p>
+            <button type="button" class="btn btn-outline-dark">SHOP NOW</button>
+          </div>
+        </div>
+
+        <div class="card  text-white rounded-0">
+          <img src="images/imgi_22_banner2-demo1.jpg" class="card-img rounded-0" alt="..." height="273.5px">
+          <div class="card-img-overlay d-flex flex-column align-items-start text-dark gap-1 p-4">
+            <h5 class="card-title fs-6">NEW COLLECTION</h5>
+            <p class="card-text h1 fw-bold w-50">Puffer Jacket 30% off</p>
+            <p class="card-text h5 fs-6">Best jacket in year</p>
+            <button type="button" class="btn btn-outline-dark">SHOP NOW</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="feature-section p-5 ">
+    <div class="container">
+      <div class="row">
+        <div class="cols col-12 col-md-6 col-lg-3 d-flex flex-row   p-3">
+          <i class="fa-regular fa-truck fs-1 text-secondary me-2"></i>
+          <div>
+            <h5>Fast, Free Shipping</h5>
+            <p class="fs-6 text-muted">On orders over $50</p>
+          </div>
+        </div>
+
+        <div class="cols col-12 col-md-6 col-lg-3 d-flex flex-row   p-3">
+          <i class="fa-regular fa-clock fs-1 text-secondary me-2"></i>
+          <div>
+            <h5>Fast, Free Shipping</h5>
+            <p class="fs-6 text-muted">On orders over $50</p>
+          </div>
+        </div>
+
+        <div class="cols col-12 col-md-6 col-lg-3 d-flex flex-row   p-3">
+          <i class="fa-regular fa-percent fs-1 text-secondary me-2"></i>
+          <div>
+            <h5>Fast, Free Shipping</h5>
+            <p class="fs-6 text-muted">On orders over $50</p>
+          </div>
+        </div>
+
+        <div class=" col-12 col-md-6 col-lg-3 d-flex flex-row p-3">
+          <i class="fa-regular fa-thumbs-up fs-1 text-secondary me-2"></i>
+          <div>
+            <h5>Fast, Free Shipping</h5>
+            <p class="fs-6 text-muted">On orders over $50</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="category-section py-5">
+    <div class="container"> <!-- خليتها fluid علشان الصف ياخد العرض كله -->
+      <div class="category-slider">
+              <div class="category-track row flex-nowrap" id="sliderTrack">
+
+        <!-- صورة 1 -->
+        <div class="col-6 col-md-3 col-lg-2 category-col">
+          <div class="category-item position-relative mx-auto">
+            <img src="images/imgi_141_cat-1-150x150.jpg" alt="Category 1" class="img-fluid rounded-circle">
+            <div class="overlay">
+              <a href="#" class="arrow-link"><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <p class="mt-2 category-title text-center">Smartphone</p>
+        </div>
+
+        <!-- صورة 2 -->
+        <div class="col-6 col-md-3 col-lg-2 category-col">
+          <div class="category-item position-relative mx-auto">
+            <img src="images/imgi_145_cat-2-150x150.jpg" alt="Category 2" class="img-fluid rounded-circle">
+            <div class="overlay">
+              <a href="#" class="arrow-link"><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <p class="mt-2 category-title text-center">Home & Decor</p>
+        </div>
+
+        <!-- صورة 3 -->
+        <div class="col-6 col-md-3 col-lg-2 category-col">
+          <div class="category-item position-relative mx-auto">
+            <img src="images/imgi_148_cosmetic-cat-7-150x150.jpg" alt="Category 3" class="img-fluid rounded-circle">
+            <div class="overlay">
+              <a href="#" class="arrow-link"><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <p class="mt-2 category-title text-center">Makeup</p>
+        </div>
+
+        <!-- صورة 4 -->
+        <div class="col-6 col-md-3 col-lg-2 category-col">
+          <div class="category-item position-relative mx-auto">
+            <img src="images/imgi_153_cat-4-150x150.jpg" alt="Category 4" class="img-fluid rounded-circle">
+            <div class="overlay">
+              <a href="#" class="arrow-link"><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <p class="mt-2 category-title text-center">Autopart</p>
+        </div>
+
+        <!-- صورة 5 -->
+        <div class="col-6 col-md-3 col-lg-2 category-col">
+          <div class="category-item position-relative mx-auto">
+            <img src="images/imgi_157_cat-5-150x150.jpg" alt="Category 5" class="img-fluid rounded-circle">
+            <div class="overlay">
+              <a href="#" class="arrow-link"><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <p class="mt-2 category-title text-center">Laptop & Computer</p>
+        </div>
+
+        <!-- صورة 6 -->
+        <div class="col-6 col-md-3 col-lg-2 category-col">
+          <div class="category-item position-relative mx-auto">
+            <img src="images/imgi_161_cat-6-150x150.jpg" alt="Category 6" class="img-fluid rounded-circle">
+            <div class="overlay">
+              <a href="#" class="arrow-link"><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <p class="mt-2 category-title text-center">Fashion</p>
+        </div>
+
+        <!-- صورة 7 -->
+        <div class="col-6 col-md-3 col-lg-2 category-col">
+          <div class="category-item position-relative mx-auto">
+            <img src="images/imgi_165_cat-7-150x150.jpg" alt="Category 7" class="img-fluid rounded-circle">
+            <div class="overlay">
+              <a href="#" class="arrow-link"><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <p class="mt-2 category-title text-center">Headphones</p>
+        </div>
+
+        <!-- صورة 8 -->
+        <div class="col-6 col-md-3 col-lg-2 category-col">
+          <div class="category-item position-relative mx-auto">
+            <img src="images/imgi_169_cat-8-150x150.jpg" alt="Category 7" class="img-fluid rounded-circle">
+            <div class="overlay">
+              <a href="#" class="arrow-link"><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <p class="mt-2 category-title text-center">Handbag</p>
+        </div>
+
+      </div>
+        <div class="my-4">
+          <div class="discount-box p-3 border rounded text-center">
+              Super discount for your <strong>first purchase</strong> 
+              <span class="coupon-text" id="coupon">COUPON25</span> 
+              Use discount code in the checkout!
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="product-section">
+  <div class="container py-5 position-relative">
+    <!-- Header with Countdown -->
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <h3 class="fw-bold">Flash Deals</h3>
+      <div class="d-flex align-items-center gap-3">
+        <div class="d-flex align-items-center">
+          <span class="me-2">Ends in</span>
+          <div id="countdown" class="fw-bold bg-dark text-white p-2 rounded-circle">00 : 00 : 00</div>
+        </div>
+        <a href="#" class="newarrivals-seeall">See All Products</a>
+      </div>
+    </div>
+
+
+    <!-- Swiper Slider -->
+    <div class="swiper">
+      <div class="swiper-wrapper">
+
+        <!-- Product Card Example -->
+        <div class="swiper-slide">
+          <div class="product-card" onclick="window.location.href='#'">
+            <span class="discount-badge">-35%</span>
+            <div class="product-actions">
+              <button data-bs-toggle="popover" data-bs-content="Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button data-bs-toggle="popover" data-bs-content="Compare"><i class="fa-solid fa-code-compare"></i></button>
+              <button data-bs-toggle="popover" data-bs-content="Quick View"><i class="fa-regular fa-eye"></i></button>
+              <button data-bs-toggle="popover" data-bs-content="Add to Cart"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+            <img src="images/imgi_34_electronic-30-6-300x300.jpg" class="img-fluid mb-3" alt="">
+            <h6>Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB SSD</h6>
+            <p class="mb-1"><strong>$999</strong> <del class="text-muted">$1,536</del></p>
+            <div class="text-warning">★★★★☆</div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="product-card" onclick="window.location.href='#'">
+            <span class="discount-badge">-6%</span>
+            <div class="product-actions">
+              <button data-bs-toggle="popover" data-bs-content="Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button data-bs-toggle="popover" data-bs-content="Compare"><i class="fa-solid fa-code-compare"></i></button>
+              <button data-bs-toggle="popover" data-bs-content="Quick View"><i class="fa-regular fa-eye"></i></button>
+              <button data-bs-toggle="popover" data-bs-content="Add to Cart"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+            <img src="images/imgi_35_electronic-14-2-300x300.jpg" class="img-fluid mb-3" alt="">
+            <h6>Apple Watch Series 9 GPS 45mm, Aluminum Case with Sport Band</h6>
+            <p class="mb-1"><strong>$890</strong> <del class="text-muted">$950</del></p>
+            <div class="text-warning">★★★★☆</div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="product-card" onclick="window.location.href='#'">
+            <span class="discount-badge">-8%</span>
+            <div class="product-actions">
+              <button data-bs-toggle="popover" data-bs-content="Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button data-bs-toggle="popover" data-bs-content="Compare"><i class="fa-solid fa-code-compare"></i></button>
+              <button data-bs-toggle="popover" data-bs-content="Quick View"><i class="fa-regular fa-eye"></i></button>
+              <button data-bs-toggle="popover" data-bs-content="Add to Cart"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+            <img src="images/imgi_36_automotive-11-300x300.jpg" class="img-fluid mb-3" alt="">
+            <h6>TOOLS 34 Low Profile Hydraulic Trolley</h6>
+            <p class="mb-1"><strong>$767</strong> <del class="text-muted">$837</del></p>
+            <div class="text-warning">★★★★☆</div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="product-card" onclick="window.location.href='#'">
+            <span class="discount-badge">-33%</span>
+            <div class="product-actions">
+              <button data-bs-toggle="popover" data-bs-content="Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button data-bs-toggle="popover" data-bs-content="Compare"><i class="fa-solid fa-code-compare"></i></button>
+              <button data-bs-toggle="popover" data-bs-content="Quick View"><i class="fa-regular fa-eye"></i></button>
+              <button data-bs-toggle="popover" data-bs-content="Add to Cart"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+            <img src="images/imgi_37_furniture-6-300x300.jpg" class="img-fluid mb-3" alt="">
+            <h6>14-inch Fasion Simplicity Quality Wall Clock, Home Decor</h6>
+            <p class="mb-1"><strong>$50</strong> <del class="text-muted">$75</del></p>
+            <div class="text-warning">★★★★☆</div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="product-card" onclick="window.location.href='#'">
+            <span class="discount-badge">-37%</span>
+            <div class="product-actions">
+              <button data-bs-toggle="popover" data-bs-content="Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button data-bs-toggle="popover" data-bs-content="Compare"><i class="fa-solid fa-code-compare"></i></button>
+              <button data-bs-toggle="popover" data-bs-content="Quick View"><i class="fa-regular fa-eye"></i></button>
+              <button data-bs-toggle="popover" data-bs-content="Add to Cart"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+            <img src="images/imgi_38_cosmetics-33-300x300.jpg" class="img-fluid mb-3" alt="">
+            <h6>Translucent Compact Face Powder - 03 Meduim, 0.22 oz</h6>
+            <p class="mb-1"><strong>$9</strong> <del class="text-muted">$14</del></p>
+            <div class="text-warning">★★★★☆</div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="product-card" onclick="window.location.href='#'">
+            <span class="discount-badge">-17%</span>
+            <div class="product-actions">
+              <button data-bs-toggle="popover" data-bs-content="Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button data-bs-toggle="popover" data-bs-content="Compare"><i class="fa-solid fa-code-compare"></i></button>
+              <button data-bs-toggle="popover" data-bs-content="Quick View"><i class="fa-regular fa-eye"></i></button>
+              <button data-bs-toggle="popover" data-bs-content="Add to Cart"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+            <img src="images/imgi_31_cosmetics-40-1-300x300.jpg" class="img-fluid mb-3" alt="">
+            <h6>Allure Luminous Intense Lipstick 0.15oz</h6>
+            <p class="mb-1"><strong>$20</strong> <del class="text-muted">$24</del></p>
+            <div class="text-warning">★★★★☆</div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="product-card" onclick="window.location.href='#'">
+            <div class="product-actions">
+              <button data-bs-toggle="popover" data-bs-content="Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button data-bs-toggle="popover" data-bs-content="Compare"><i class="fa-solid fa-code-compare"></i></button>
+              <button data-bs-toggle="popover" data-bs-content="Quick View"><i class="fa-regular fa-eye"></i></button>
+              <button data-bs-toggle="popover" data-bs-content="Add to Cart"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+            <img src="images/imgi_32_fashion-10-1-300x300.jpg" class="img-fluid mb-3" alt="">
+            <h6>Tonga on T-Shirt for Men, Women Short Sleeve Tee</h6>
+            <p class="mb-1"><strong>$43</strong>
+            <div class="text-warning">★★★★☆</div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="product-card" onclick="window.location.href='#'">
+            <span class="discount-badge">-37%</span>
+            <div class="product-actions">
+              <button data-bs-toggle="popover" data-bs-content="Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button data-bs-toggle="popover" data-bs-content="Compare"><i class="fa-solid fa-code-compare"></i></button>
+              <button data-bs-toggle="popover" data-bs-content="Quick View"><i class="fa-regular fa-eye"></i></button>
+              <button data-bs-toggle="popover" data-bs-content="Add to Cart"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+            <img src="images/imgi_33_cosmetic-2-300x300.jpg" class="img-fluid mb-3" alt="">
+            <h6>Makeup Brushes Artisan Easel Elite Cosmetics</h6>
+            <p class="mb-1"><strong>$19</strong> <del class="text-muted">$30</del></p>
+            <div class="text-warning">★★★★☆</div>
+          </div>
+        </div>
+        <!-- ... -->
+      </div>
+
+      
+    </div>
+    
+    <!-- Arrows -->
+    <div class="swiper-button-prev custom-prev"></div>
+    <div class="swiper-button-next custom-next"></div>
+  </div>
+  </section>
+
+  <section class="img-section">
+  <div class="container py-5">
+  <div class="row g-4">
+
+    <!-- Card 1 (text bottom) -->
+    <div class="col-md-3">
+      <div class="custom-card">
+        <img src="images/imgi_39_banner3-demo1.jpg" alt="Car">
+        <div class="card-overlay-bottom text-white">
+          <h5 class="fw-bold mb-1 text-uppercase fw-bold " style="font-size: 30px;">SALE 10% OFF</h5>
+          <p class="mb-0 fw-bold text-uppercase" style="font-size: 30px;">TIRES MICHELIN</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 (text top) -->
+    <div class="col-md-6">
+      <div class="custom-card">
+        <img src="images/imgi_41_banner4-demo1.jpg" alt="Sofa">
+        <div class="card-overlay-top">
+          <small class="text-warning fw-bold">NEW COLLECTION</small>
+          <h4 class="fw-bold">Sofa Crafted in UK</h4>
+          <a href="#" class="fw-bold text-dark">Shop now →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 (text bottom) -->
+    <div class="col-md-3">
+      <div class="custom-card">
+        <img src="images/imgi_43_banner5-demo1.jpg" alt="Beauty Products">
+        <div class="card-overlay-bottom text-white" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 30px;">
+          <p class="mb-0">Steals under $25</p>
+          <h5 class="fw-bold fst-italic" style="font-family: Pinyon Script, cursive; font-size: 30px;">Beauty</h5>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+  </section>
+
+  <section class="newarrivals-section">
+  <div class="container py-5">
+  <!-- Links row -->
+  <div class="d-flex justify-content-between align-items-center mb-4 newarrivals-header">
+    <h3 class="fw-bold">New arrivals</h3>
+    <div class="d-flex gap-4 align-items-center newarrivals-links">
+      <a href="#fashion" class="newarrivals-link active">Fashion</a>
+      <a href="#" class="newarrivals-link">Phone & Tablet</a>
+      <a href="#" class="newarrivals-link">Home & Decor</a>
+      <a href="#" class="newarrivals-link">Beauty & Health</a>
+      <a href="all-products.html" class="newarrivals-seeall">See All Products</a>
+    </div>
+  </div>
+
+  <!-- Cards grid -->
+  <div class="row g-0">
+    <!-- Card example -->
+    <div class="col-md-6 col-lg-4">
+      <div class="newarrivals-card position-relative">
+        <span class="badge bg-danger position-absolute top-0 start-0 m-2">HOT</span>
+        <div class="d-flex align-items-center p-3">
+          <img src="images/imgi_154_fashion-5-700x700.jpg" class="newarrivals-img" alt="Product">
+          <div class="ms-3">
+            <h6 class="newarrivals-title mb-1">Nike Air Max Unisex SYSTM Men Sneaker Shoes</h6>
+            <p class="fw-bold mb-1">$148</p>
+            <div class="text-warning">★★★★☆</div>
+          </div>
+        </div>
+        <div class="newarrivals-actions">
+          <button class="btn btn-light btn-sm" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Add to cart">
+            <i class="bi bi-cart-plus"></i> ADD TO CART
+          </button>
+          <button class="btn btn-light btn-sm" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Compare">
+            <i class="bi bi-arrow-repeat"></i>
+          </button>
+          <button class="btn btn-light btn-sm" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Add to wishlist">
+            <i class="bi bi-heart"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- كرر الكول للكروت الباقية -->
+
+    <div class="col-md-6 col-lg-4">
+      <div class="newarrivals-card position-relative">
+        <span class="badge bg-danger position-absolute top-0 start-0 m-2">HOT</span>
+        <div class="d-flex align-items-center p-3">
+          <img src="images/imgi_162_fashion-9-700x700.jpg" class="newarrivals-img" alt="Product">
+          <div class="ms-3">
+            <h6 class="newarrivals-title mb-1">100% UV Protection Sunglasses For Men</h6>
+            <p class="fw-bold mb-1">$123</p>
+            <div class="text-warning">★★★★☆</div>
+          </div>
+        </div>
+        <div class="newarrivals-actions">
+          <button class="btn btn-light btn-sm" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Add to cart">
+            <i class="bi bi-cart-plus"></i> ADD TO CART
+          </button>
+          <button class="btn btn-light btn-sm" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Compare">
+            <i class="bi bi-arrow-repeat"></i>
+          </button>
+          <button class="btn btn-light btn-sm" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Add to wishlist">
+            <i class="bi bi-heart"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-4">
+      <div class="newarrivals-card position-relative">
+        <span class="badge bg-danger position-absolute top-0 start-0 m-2">HOT</span>
+        <div class="d-flex align-items-center p-3">
+          <img src="images/imgi_170_fashion-6-700x700.jpg" class="newarrivals-img" alt="Product">
+          <div class="ms-3">
+            <h6 class="newarrivals-title mb-1">LV Women Leather Accent Denim Mini Skirt</h6>
+            <p class="fw-bold mb-1">$1,390</p>
+            <div class="text-warning">★★★★☆</div>
+          </div>
+        </div>
+        <div class="newarrivals-actions">
+          <button class="btn btn-light btn-sm" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Add to cart">
+            <i class="bi bi-cart-plus"></i> ADD TO CART
+          </button>
+          <button class="btn btn-light btn-sm" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Compare">
+            <i class="bi bi-arrow-repeat"></i>
+          </button>
+          <button class="btn btn-light btn-sm" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Add to wishlist">
+            <i class="bi bi-heart"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-md-6 col-lg-4">
+      <div class="newarrivals-card position-relative">
+        <div class="d-flex align-items-center p-3">
+          <img src="images/imgi_178_fashion-16-700x700.jpg" class="newarrivals-img" alt="Product">
+          <div class="ms-3">
+            <h6 class="newarrivals-title mb-1">A Different Christmas Knit Holiday Sweater</h6>
+            <p class="fw-bold mb-1">$50 - $60</p>
+            <div class="text-warning">★★★★☆</div>
+          </div>
+        </div>
+        <div class="newarrivals-actions">
+          <button class="btn btn-light btn-sm" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Add to cart">
+            <i class="bi bi-cart-plus"></i> ADD TO CART
+          </button>
+          <button class="btn btn-light btn-sm" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Compare">
+            <i class="bi bi-arrow-repeat"></i>
+          </button>
+          <button class="btn btn-light btn-sm" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Add to wishlist">
+            <i class="bi bi-heart"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-4">
+      <div class="newarrivals-card position-relative">
+        <span class="badge bg-danger position-absolute top-0 start-0 m-2">HOT</span>
+        <div class="d-flex align-items-center p-3">
+          <img src="images/imgi_186_fashion-1-700x700.jpg" class="newarrivals-img" alt="Product">
+          <div class="ms-3">
+            <h6 class="newarrivals-title mb-1">Winter New Jacket Loose Retro American Campus</h6>
+            <p class="fw-bold mb-1">$160</p>
+            <div class="text-warning">★★★★☆</div>
+          </div>
+        </div>
+        <div class="newarrivals-actions">
+          <button class="btn btn-light btn-sm" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Add to cart">
+            <i class="bi bi-cart-plus"></i> ADD TO CART
+          </button>
+          <button class="btn btn-light btn-sm" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Compare">
+            <i class="bi bi-arrow-repeat"></i>
+          </button>
+          <button class="btn btn-light btn-sm" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Add to wishlist">
+            <i class="bi bi-heart"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-4">
+      <div class="newarrivals-card position-relative">
+        <span class="badge bg-danger position-absolute top-0 start-0 m-2">HOT</span>
+        <div class="d-flex align-items-center p-3">
+          <img src="images/imgi_194_fashion-3-700x700.jpg" class="newarrivals-img" alt="Product">
+          <div class="ms-3">
+            <h6 class="newarrivals-title mb-1">Winter Hats with Top Ball Custom Design</h6>
+            <p class="fw-bold mb-1">$17</p>
+            <div class="text-warning">★★★★☆</div>
+          </div>
+        </div>
+        <div class="newarrivals-actions">
+          <button class="btn btn-light btn-sm" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Add to cart">
+            <i class="bi bi-cart-plus"></i> ADD TO CART
+          </button>
+          <button class="btn btn-light btn-sm" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Compare">
+            <i class="bi bi-arrow-repeat"></i>
+          </button>
+          <button class="btn btn-light btn-sm" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Add to wishlist">
+            <i class="bi bi-heart"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+  </section>
+
+  <section class="hoodie-slider-section py-5">
+    <div id="hoodieCarousel" class="carousel slide carousel-fade hoodie-slider-container" data-bs-ride="carousel">
+        <!-- كلمة Hoodie الثابتة -->
+        <span class="hoodie-big-text">HOODIE</span>
+        <!-- علامة الخصم الثابتة -->
+        <div id="hoodieDiscount" class="hoodie-discount-circle">-30%</div>
+    
+        <!-- السلايدات -->
+        <div class="carousel-inner">
+            <div class="carousel-item active position-relative text-center hoodie-carousel-item">
+                <img src="images/imgi_87_slide-hoodie-1.png" class="d-block mx-auto" alt="Hoodie 1">
+            </div>
+            <div class="carousel-item position-relative text-center hoodie-carousel-item">
+                <img src="images/imgi_88_slide-hoodie-2.png" class="d-block mx-auto" alt="Hoodie 2">
+            </div>
+            <div class="carousel-item position-relative text-center hoodie-carousel-item">
+                <img src="images/imgi_89_slide-hoodie-3.png" class="d-block mx-auto" alt="Hoodie 3">
+            </div>
+            <div class="carousel-item position-relative text-center hoodie-carousel-item">
+                <img src="images/imgi_90_slide-hoodie-4.png" class="d-block mx-auto" alt="Hoodie 4">
+            </div>
+        </div>
+      
+        <!-- أسهم التنقل -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#hoodieCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon text-dark"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#hoodieCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+      
+        <!-- كارت المنتج (ثابت) -->
+        <div class="hoodie-product-card">
+            <h4 class="fw-bold">Athletics Embroidered Relaxed Hoodie</h4>
+            <ul class="list-unstyled text-success mb-3">
+                <li>✓ 64% cotton, 36% polyester</li>
+                <li>✓ Do not dry clean</li>
+                <li>✓ Machine wash</li>
+            </ul>
+            <h4>$89 <small class="text-muted text-decoration-line-through">$120</small></h4>
+          
+            <!-- الصور الصغيرة -->
+            <div class="d-flex my-3">
+                <img src="images/imgi_91_167-4.jpg" class="hoodie-thumb-img" onclick="hoodieChangeSlide(0)">
+                <img src="images/imgi_92_167-2.jpg" class="hoodie-thumb-img" onclick="hoodieChangeSlide(1)">
+                <img src="images/imgi_93_167-3.jpg" class="hoodie-thumb-img" onclick="hoodieChangeSlide(2)">
+                <img src="images/imgi_94_167.jpg" class="hoodie-thumb-img" onclick="hoodieChangeSlide(3)">
+            </div>
+          
+            <button class="hoodie-buy-btn w-100">BUY NOW</button>
+        </div>
+    </div>
+
+  </section>
+
+  <section class="product-section">
+    <div class="container py-5 position-relative">
+      <!-- Header with Countdown -->
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h3 class="fw-bold">Best Selling</h3>
+          <a href="#" class="newarrivals-seeall">See All Products</a>
+      </div>
+    
+    
+      <!-- Swiper Slider -->
+      <div class="swiper">
+        <div class="swiper-wrapper">
+        
+          <!-- Product Card Example -->
+          <div class="swiper-slide">
+            <div class="product-card" onclick="window.location.href='#'">
+              <span class="discount-badge">-35%</span>
+              <div class="product-actions">
+                <button data-bs-toggle="popover" data-bs-content="Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <button data-bs-toggle="popover" data-bs-content="Compare"><i class="fa-solid fa-code-compare"></i></button>
+                <button data-bs-toggle="popover" data-bs-content="Quick View"><i class="fa-regular fa-eye"></i></button>
+                <button data-bs-toggle="popover" data-bs-content="Add to Cart"><i class="fa-solid fa-cart-shopping"></i></button>
+              </div>
+              <img src="images/imgi_34_electronic-30-6-300x300.jpg" class="img-fluid mb-3" alt="">
+              <h6>Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB SSD</h6>
+              <p class="mb-1"><strong>$999</strong> <del class="text-muted">$1,536</del></p>
+              <div class="text-warning">★★★★☆</div>
+            </div>
+          </div>
+        
+          <div class="swiper-slide">
+            <div class="product-card" onclick="window.location.href='#'">
+              <span class="discount-badge">-6%</span>
+              <div class="product-actions">
+                <button data-bs-toggle="popover" data-bs-content="Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <button data-bs-toggle="popover" data-bs-content="Compare"><i class="fa-solid fa-code-compare"></i></button>
+                <button data-bs-toggle="popover" data-bs-content="Quick View"><i class="fa-regular fa-eye"></i></button>
+                <button data-bs-toggle="popover" data-bs-content="Add to Cart"><i class="fa-solid fa-cart-shopping"></i></button>
+              </div>
+              <img src="images/imgi_35_electronic-14-2-300x300.jpg" class="img-fluid mb-3" alt="">
+              <h6>Apple Watch Series 9 GPS 45mm, Aluminum Case with Sport Band</h6>
+              <p class="mb-1"><strong>$890</strong> <del class="text-muted">$950</del></p>
+              <div class="text-warning">★★★★☆</div>
+            </div>
+          </div>
+        
+          <div class="swiper-slide">
+            <div class="product-card" onclick="window.location.href='#'">
+              <span class="discount-badge">-8%</span>
+              <div class="product-actions">
+                <button data-bs-toggle="popover" data-bs-content="Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <button data-bs-toggle="popover" data-bs-content="Compare"><i class="fa-solid fa-code-compare"></i></button>
+                <button data-bs-toggle="popover" data-bs-content="Quick View"><i class="fa-regular fa-eye"></i></button>
+                <button data-bs-toggle="popover" data-bs-content="Add to Cart"><i class="fa-solid fa-cart-shopping"></i></button>
+              </div>
+              <img src="images/imgi_36_automotive-11-300x300.jpg" class="img-fluid mb-3" alt="">
+              <h6>TOOLS 34 Low Profile Hydraulic Trolley</h6>
+              <p class="mb-1"><strong>$767</strong> <del class="text-muted">$837</del></p>
+              <div class="text-warning">★★★★☆</div>
+            </div>
+          </div>
+        
+          <div class="swiper-slide">
+            <div class="product-card" onclick="window.location.href='#'">
+              <span class="discount-badge">-33%</span>
+              <div class="product-actions">
+                <button data-bs-toggle="popover" data-bs-content="Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <button data-bs-toggle="popover" data-bs-content="Compare"><i class="fa-solid fa-code-compare"></i></button>
+                <button data-bs-toggle="popover" data-bs-content="Quick View"><i class="fa-regular fa-eye"></i></button>
+                <button data-bs-toggle="popover" data-bs-content="Add to Cart"><i class="fa-solid fa-cart-shopping"></i></button>
+              </div>
+              <img src="images/imgi_37_furniture-6-300x300.jpg" class="img-fluid mb-3" alt="">
+              <h6>14-inch Fasion Simplicity Quality Wall Clock, Home Decor</h6>
+              <p class="mb-1"><strong>$50</strong> <del class="text-muted">$75</del></p>
+              <div class="text-warning">★★★★☆</div>
+            </div>
+          </div>
+        
+          <div class="swiper-slide">
+            <div class="product-card" onclick="window.location.href='#'">
+              <span class="discount-badge">-37%</span>
+              <div class="product-actions">
+                <button data-bs-toggle="popover" data-bs-content="Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <button data-bs-toggle="popover" data-bs-content="Compare"><i class="fa-solid fa-code-compare"></i></button>
+                <button data-bs-toggle="popover" data-bs-content="Quick View"><i class="fa-regular fa-eye"></i></button>
+                <button data-bs-toggle="popover" data-bs-content="Add to Cart"><i class="fa-solid fa-cart-shopping"></i></button>
+              </div>
+              <img src="images/imgi_38_cosmetics-33-300x300.jpg" class="img-fluid mb-3" alt="">
+              <h6>Translucent Compact Face Powder - 03 Meduim, 0.22 oz</h6>
+              <p class="mb-1"><strong>$9</strong> <del class="text-muted">$14</del></p>
+              <div class="text-warning">★★★★☆</div>
+            </div>
+          </div>
+        
+          <div class="swiper-slide">
+            <div class="product-card" onclick="window.location.href='#'">
+              <span class="discount-badge">-17%</span>
+              <div class="product-actions">
+                <button data-bs-toggle="popover" data-bs-content="Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <button data-bs-toggle="popover" data-bs-content="Compare"><i class="fa-solid fa-code-compare"></i></button>
+                <button data-bs-toggle="popover" data-bs-content="Quick View"><i class="fa-regular fa-eye"></i></button>
+                <button data-bs-toggle="popover" data-bs-content="Add to Cart"><i class="fa-solid fa-cart-shopping"></i></button>
+              </div>
+              <img src="images/imgi_31_cosmetics-40-1-300x300.jpg" class="img-fluid mb-3" alt="">
+              <h6>Allure Luminous Intense Lipstick 0.15oz</h6>
+              <p class="mb-1"><strong>$20</strong> <del class="text-muted">$24</del></p>
+              <div class="text-warning">★★★★☆</div>
+            </div>
+          </div>
+        
+          <div class="swiper-slide">
+            <div class="product-card" onclick="window.location.href='#'">
+              <div class="product-actions">
+                <button data-bs-toggle="popover" data-bs-content="Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <button data-bs-toggle="popover" data-bs-content="Compare"><i class="fa-solid fa-code-compare"></i></button>
+                <button data-bs-toggle="popover" data-bs-content="Quick View"><i class="fa-regular fa-eye"></i></button>
+                <button data-bs-toggle="popover" data-bs-content="Add to Cart"><i class="fa-solid fa-cart-shopping"></i></button>
+              </div>
+              <img src="images/imgi_32_fashion-10-1-300x300.jpg" class="img-fluid mb-3" alt="">
+              <h6>Tonga on T-Shirt for Men, Women Short Sleeve Tee</h6>
+              <p class="mb-1"><strong>$43</strong>
+              <div class="text-warning">★★★★☆</div>
+            </div>
+          </div>
+        
+          <div class="swiper-slide">
+            <div class="product-card" onclick="window.location.href='#'">
+              <span class="discount-badge">-37%</span>
+              <div class="product-actions">
+                <button data-bs-toggle="popover" data-bs-content="Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <button data-bs-toggle="popover" data-bs-content="Compare"><i class="fa-solid fa-code-compare"></i></button>
+                <button data-bs-toggle="popover" data-bs-content="Quick View"><i class="fa-regular fa-eye"></i></button>
+                <button data-bs-toggle="popover" data-bs-content="Add to Cart"><i class="fa-solid fa-cart-shopping"></i></button>
+              </div>
+              <img src="images/imgi_33_cosmetic-2-300x300.jpg" class="img-fluid mb-3" alt="">
+              <h6>Makeup Brushes Artisan Easel Elite Cosmetics</h6>
+              <p class="mb-1"><strong>$19</strong> <del class="text-muted">$30</del></p>
+              <div class="text-warning">★★★★☆</div>
+            </div>
+          </div>
+          <!-- ... -->
+        </div>
+      
+        
+      </div>
+      
+      <!-- Arrows -->
+      <div class="swiper-button-prev custom-prev"></div>
+      <div class="swiper-button-next custom-next"></div>
+    </div>
+  </section>
+
+  <section class="custom-search-section">
+    <h4 class="fw-bold mb-4">Looking for something else?</h4>
+    <div class="custom-search-box shadow-sm">
+        <input type="text" placeholder="Search for products...">
+        <button><i class="bi bi-search"></i></button>
+    </div>
+    <div class="custom-categories mt-4">
+      <div>
+        <a href="#">smartphone</a> <span>|</span>
+        <a href="#">tablet</a> <span>|</span>
+        <a href="#">controller</a> <span>|</span>
+        <a href="#">furniture</a> <span>|</span>
+        <a href="#">laptop</a> <span>|</span>
+        <a href="#">playstation</a> <span>|</span><br>
+      </div>
+      <div class="mt-3">
+        <a href="#">womens fashion</a> <span>|</span>
+        <a href="#">home & decor</a> <span>|</span>
+        <a href="#">camera</a>
+      </div>
+    </div>
+  </section>
+  <footer class="footer py-5 text-white">
+  <div class="container">
+    <div class="row gy-4">
+      <!-- Logo & Contact -->
+      <div class="col-md-3">
+        <img class="mb-3" src="images/imgi_356_logo-300x95.png" alt="" width="100">
+        <p class="text-muted"><i class="fa fa-location-dot me-2"></i> 29 SE 2nd Ave, Miami<br>Florida 33131, United States</p>
+        <p class="text-muted"><i class="fa fa-envelope me-2"></i> info@example.com</p>
+        <p class="fw-bold fs-6"><i class="fa fa-phone me-2"></i> (+92) 3942 7879</p>
+      </div>
+
+      <!-- Shopping Links -->
+      <div class="shopping-links col-md-2 mb-0">
+        <h6 class="fw-bold">SHOPPING</h6>
+        <ul class="list-unstyled text-white">
+          <li><a href="#" class="text-white-custom">Wishlist</a></li>
+          <li><a href="#" class="text-white-custom">Shop by Brand</a></li>
+          <li><a href="#" class="text-white-custom">Offers</a></li>
+          <li><a href="#" class="text-white-custom">Track order</a></li>
+          <li><a href="#" class="text-white-custom">Size Guide</a></li>
+        </ul>
+      </div>
+
+      <!-- Information Links -->
+      <div class="information-links col-md-2">
+        <h6 class="fw-bold">INFORMATION</h6>
+        <ul class="list-unstyled text-white">
+          <li><a href="#" class="text-white-custom">Track Order</a></li>
+          <li><a href="#" class="text-white-custom">Shipping & Returns</a></li>
+          <li><a href="#" class="text-white-custom">About us</a></li>
+          <li><a href="#" class="text-white-custom">Help</a></li>
+          <li><a href="#" class="text-white-custom">Gift Cards</a></li>
+        </ul>
+      </div>
+
+      <!-- Account Links -->
+      <div class="account-links col-md-2">
+        <h6 class="fw-bold">ACCOUNT</h6>
+        <ul class="list-unstyled text-white">
+          <li><a href="#" class="text-white-custom">Cart</a></li>
+          <li><a href="#" class="text-white-custom">My account</a></li>
+          <li><a href="#" class="text-white-custom">My orders</a></li>
+          <li><a href="#" class="text-white-custom">Wishlist</a></li>
+          <li><a href="#" class="text-white-custom">Affiliate Program</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="newsletter col-md-3">
+        <h6 class="fw-bold">Let’s keep in touch</h6>
+        <form class="d-flex position-relative">
+          <input type="email" class="form-control me-2"  placeholder="enter your email address">
+          <button class="btn" type="submit"><i class="fa fa-arrow-right"></i></button>
+        </form>
+        <div class="social-icons mt-3">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+<div class="border rounded p-4 mt-4 contact-section-box">
+  <div class="row text-center text-md-start align-items-center text-white ">
+    
+    <!-- Box 1 -->
+    <div class="col-md-4 mb-3 mb-md-0">
+      <div class="d-flex flex-column flex-md-row align-items-center align-items-md-start">
+        <i class="fa fa-phone fa-2x me-md-3 mb-2 mb-md-0"></i>
+        <div>
+          <p class="fw-bold mb-1">Didn't find what you were looking for?</p>
+          <a href="#">Contact Us</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Box 2 -->
+    <div class="col-md-4 mb-3 mb-md-0">
+      <div class="d-flex flex-column flex-md-row align-items-center align-items-md-start">
+        <i class="fa fa-face-smile fa-2x me-md-3 mb-2 mb-md-0"></i>
+        <div>
+          <p class="fw-bold mb-1">How can we help you today?</p>
+          <a href="#">Help Center</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Box 3 -->
+    <div class="col-md-4">
+      <div class="d-flex flex-column flex-md-row align-items-center align-items-md-start">
+        <i class="fa fa-life-ring fa-2x me-md-3 mb-2 mb-md-0"></i>
+        <div>
+          <p class="fw-bold mb-1">We’d love to hear what you think!</p>
+          <a href="#">Give Feedback</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+    <!-- Bottom Footer -->
+    <div class="d-flex flex-column flex-md-row align-items-center justify-content-between mt-3">
+      <p class="text-muted mb-2 mb-md-0">Copyright © Merto. All Rights Reserved</p>
+      <div class="payment-icons">
+        <!-- ضع صور الدفع هنا -->
+        <img src="images/imgi_358_payment-icons-1-500x51.png" alt="PayPal">
+      </div>
+    </div>
+  </div>
+  </footer>
+</main>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"></script>
+    <script src="js/owl.carousel.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

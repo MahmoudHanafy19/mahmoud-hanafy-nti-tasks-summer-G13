@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nata+Sans:wght@100..900&family=Pinyon+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" 
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" 
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/product-page.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+  <!-- ===== Top Navbar ===== -->
+  <div class="top-navbar py-2 border-bottom d-flex justify-content-between gap-5">
+      <div class="container-fluid d-flex justify-content-between align-items-center flex-wrap">
+      
+      <!-- Left: Logo  -->
+          <div class="d-flex align-items-center flex-wrap p-4">
+            <a href="index.html">
+              <img class="me-3" src="images/imgi_5_logo.png" alt="" width="150">
+            </a>
+          </div>
+        
+      <!-- Middle: Contact + Search Bar -->
+          <div class="top-navbar-contact d-flex align-items-center">
+              <i class="bi bi-telephone me-2 fs-5"></i>
+              <div>
+                  <small>Contact us 24/7</small><br>
+                  <strong>(+92) 3942 7879</strong>
+              </div>
+          </div>
+          <form class="d-flex search-bar my-2 my-lg-0">
+              <select class="form-select me-2" style="max-width: 150px;">
+                  <option>All Categories</option>
+                  <option>Electronics</option>
+                  <option>Fashion</option>
+              </select>
+              <span></span>
+              <input class="form-control me-2" type="search" placeholder="Search for products">
+              <button class="btn btn-dark"><i class="bi bi-search"></i></button>
+          </form>
+        
+      <!-- Right: Language, Currency, Icons -->
+      <div class="d-flex align-items-center flex-wrap">
+        <div class="dropdown me-3">
+          <a class="dropdown-toggle text-decoration-none text-dark" href="#" id="langMenu" data-bs-toggle="dropdown">
+            <img src="images/imgi_1_english.png" alt=""> English
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"><img src="images/imgi_1_english.png" alt=""> English</a></li>
+            <li><a class="dropdown-item" href="#"><img src="images/imgi_2_espanol.png" alt=""> Español</a></li>
+            <li><a class="dropdown-item" href="#"><img src="images/imgi_3_francais.png" alt=""> Français</a></li>
+            <li><a class="dropdown-item" href="#"><img src="images/imgi_4_portugues.png" alt=""> Português</a></li>
+          </ul>
+        </div>
+        <div class="dropdown me-3">
+          <a class="dropdown-toggle text-decoration-none text-dark" href="#" id="currencyMenu" data-bs-toggle="dropdown">
+            USD
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">USD</a></li>
+            <li><a class="dropdown-item" href="#">EUR</a></li>
+          </ul>
+        </div>
+        <a href="#" class="me-3 text-dark"><i class="bi bi-person"></i> Account</a>
+        <a href="#" class="position-relative me-3 text-dark">
+          <i class="bi bi-heart"></i>
+          <span class="badge bg-danger rounded-circle position-absolute top-0 start-100 translate-middle">0</span>
+        </a>
+        <a href="#" class="position-relative text-dark">
+          <i class="bi bi-cart"></i>
+          <span class="badge bg-danger rounded-circle position-absolute top-0 start-100 translate-middle">0</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  
+  <!-- ===== Main Navbar ===== -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <div class="d-flex">
+      <button class="btn me-2 list-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+        <i class="bi bi-list"></i> SHOP BY CATEGORIES
+      </button>
+      <!-- <button class="btn  me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+        <i class="bi bi-list me-2"> SHOP BY CATEGORIES</i></button> -->
+
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdroped with scrolling</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body ">
+          <p>Try scrolling the rest of the page to see this option in actionsss.</p>
+        </div>
+      </div>
+    
+      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+    
+      <div class="d-flex main-nav-link" id="mainNav">
+        <ul class="d-flex flex-row gap-3 navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active text-danger" href="#" data-bs-toggle="dropdown">Homepages</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Home 1</a></li>
+              <li><a class="dropdown-item" href="#">Home 2</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Categories</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Category 1</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="product.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Pages</a></li>
+          <li class="nav-item"><a class="nav-link" href="contactus.html">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Best Discount</a></li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle main-nav-link" href="#" data-bs-toggle="dropdown">Recently viewed</a>
+            <ul class="dropdown-menu main-nav-link">
+              <li><a class="dropdown-item" href="#">Product 1</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+    <main>
+        <section class="main-productpage-section py-4">
+            <div class="container">
+                <!-- Breadcrumb -->
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Shop</li>
+                    </ol>
+                </nav>
+            
+                <!-- Page Title -->
+                <h3 class="fw-bold">Shop</h3>
+            
+                <!-- Categories -->
+                <div class="categories-wrapper mt-3">
+                    <button class="category-btn me-2" onclick="handleFilter('all')">All</button>
+                    <button class="category-btn me-2" onclick="handleFilter('autopart')">Autopart</button>
+                    <button class="category-btn me-2" onclick="handleFilter('beauty-health')">Beauty &amp; Health</button>
+                    <button class="category-btn me-2" onclick="handleFilter('electronic')">Electronic</button>
+                    <button class="category-btn me-2" onclick="handleFilter('fashion')">Fashion</button>
+                    <button class="category-btn me-2" onclick="handleFilter('game-accessories')">Game Accessories</button>
+                    <button class="category-btn me-2" onclick="handleFilter('homedecor')">Home &amp; Decor</button>
+                    <button class="category-btn me-2" onclick="handleFilter('electronic')">Laptop &amp; Computer</button>
+                    <button class="category-btn me-2" onclick="handleFilter()">Phone &amp; Tablet</button>
+                    <button class="category-btn me-2" onclick="handleFilter()">TV, Audio - Video</button>
+                </div>
+                <div class="row g-3">
+                    <!-- Sidebar -->
+                    <aside class="col-lg-3 shop-filters">
+                        <!-- Colors -->
+  <div class="filter-section section-colors">
+    <h6 class="filters-title mb-3">Colors</h6>
+    <ul class="colors-list list-unstyled m-0">
+      <!-- 18 لون -->
+      <li><button type="button" class="color-row">
+        <span class="left"><span class="swatch" style="background:#000;"></span> Black</span><span class="count">86</span>
+      </button></li>
+      <li><button type="button" class="color-row">
+        <span class="left"><span class="swatch" style="background:#0b5ed7;"></span> Blue</span><span class="count">29</span>
+      </button></li>
+      <li><button type="button" class="color-row">
+        <span class="left"><span class="swatch" style="background:#6c757d;"></span> Gray</span><span class="count">16</span>
+      </button></li>
+      <li><button type="button" class="color-row">
+        <span class="left"><span class="swatch" style="background:#6f42c1;"></span> Purple</span><span class="count">3</span>
+      </button></li>
+      <li><button type="button" class="color-row">
+        <span class="left"><span class="swatch" style="background:#d63384;"></span> Magenta</span><span class="count">7</span>
+      </button></li>
+      <li><button type="button" class="color-row">
+        <span class="left"><span class="swatch" style="background:#d4af37;"></span> Gold</span><span class="count">5</span>
+      </button></li>
+      <li><button type="button" class="color-row">
+        <span class="left"><span class="swatch" style="background:#5a189a;"></span> Deep Purple</span><span class="count">13</span>
+      </button></li>
+      <li><button type="button" class="color-row">
+        <span class="left"><span class="swatch" style="background:#198754;"></span> Green</span><span class="count">25</span>
+      </button></li>
+      <li><button type="button" class="color-row">
+        <span class="left"><span class="swatch" style="background:#9ee493;"></span> Light Green</span><span class="count">4</span>
+      </button></li>
+      <li><button type="button" class="color-row">
+        <span class="left"><span class="swatch" style="background:#fd7e14;"></span> Orange</span><span class="count">6</span>
+      </button></li>
+      <li><button type="button" class="color-row">
+        <span class="left"><span class="swatch" style="background:#ffb6c1;"></span> Pink</span><span class="count">10</span>
+      </button></li>
+      <li><button type="button" class="color-row">
+        <span class="left"><span class="swatch" style="background:#800000;"></span> Maroon</span><span class="count">9</span>
+      </button></li>
+      <li><button type="button" class="color-row">
+        <span class="left"><span class="swatch" style="background:#dc3545;"></span> Red</span><span class="count">15</span>
+      </button></li>
+      <li><button type="button" class="color-row">
+        <span class="left"><span class="swatch" style="background:#7b3f00;"></span> Rosewood</span><span class="count">2</span>
+      </button></li>
+      <li><button type="button" class="color-row">
+        <span class="left"><span class="swatch swatch--border" style="background:#fff;"></span> White</span><span class="count">34</span>
+      </button></li>
+      <li><button type="button" class="color-row">
+        <span class="left"><span class="swatch" style="background:#ffc107;"></span> Yellow</span><span class="count">4</span>
+      </button></li>
+      <li><button type="button" class="color-row">
+        <span class="left"><span class="swatch" style="background:#bdb76b;"></span> Khaki</span><span class="count">7</span>
+      </button></li>
+    </ul>
+  </div>
+
+  <!-- Brands -->
+  <div class="filter-section section-brands">
+    <h6 class="filters-title mb-2">Brands</h6>
+    <div class="search-wrap position-relative mb-2">
+      <input type="text" class="form-control form-control-sm pe-5" placeholder="Search Brands...">
+      <i class="bi bi-search search-ico"></i>
+    </div>
+    <ul class="list-unstyled brands-list m-0">
+      <!-- كتير علشان يظهر Scrollbar أسود قصير -->
+      <li class="filter-row form-check">
+        <input class="form-check-input" type="checkbox" id="br-amazon">
+        <label class="form-check-label" for="br-amazon">Amazon (4)</label>
+      </li>
+      <li class="filter-row form-check">
+        <input class="form-check-input" type="checkbox" id="br-apple">
+        <label class="form-check-label" for="br-apple">Apple (5)</label>
+      </li>
+      <li class="filter-row form-check">
+        <input class="form-check-input" type="checkbox" id="br-asus">
+        <label class="form-check-label" for="br-asus">Asus (6)</label>
+      </li>
+      <li class="filter-row form-check">
+        <input class="form-check-input" type="checkbox" id="br-dell">
+        <label class="form-check-label" for="br-dell">Dell (8)</label>
+      </li>
+      <li class="filter-row form-check">
+        <input class="form-check-input" type="checkbox" id="br-hp">
+        <label class="form-check-label" for="br-hp">HP (3)</label>
+      </li>
+      <li class="filter-row form-check">
+        <input class="form-check-input" type="checkbox" id="br-huawei">
+        <label class="form-check-label" for="br-huawei">Huawei (2)</label>
+      </li>
+      <li class="filter-row form-check">
+        <input class="form-check-input" type="checkbox" id="br-lenovo">
+        <label class="form-check-label" for="br-lenovo">Lenovo (3)</label>
+      </li>
+      <li class="filter-row form-check">
+        <input class="form-check-input" type="checkbox" id="br-lg">
+        <label class="form-check-label" for="br-lg">LG (4)</label>
+      </li>
+      <li class="filter-row form-check">
+        <input class="form-check-input" type="checkbox" id="br-msi">
+        <label class="form-check-label" for="br-msi">MSI (5)</label>
+      </li>
+      <li class="filter-row form-check">
+        <input class="form-check-input" type="checkbox" id="br-samsung">
+        <label class="form-check-label" for="br-samsung">Samsung (7)</label>
+      </li>
+      <li class="filter-row form-check">
+        <input class="form-check-input" type="checkbox" id="br-sony">
+        <label class="form-check-label" for="br-sony">Sony (5)</label>
+      </li>
+      <li class="filter-row form-check">
+        <input class="form-check-input" type="checkbox" id="br-xiaomi">
+        <label class="form-check-label" for="br-xiaomi">Xiaomi (4)</label>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Price -->
+  <div class="filter-section section-price">
+    <h6 class="filters-title mb-2">Price</h6>
+    <ul class="list-unstyled m-0 mb-2">
+      <li class="filter-row form-check">
+        <input class="form-check-input" type="checkbox" id="pr-1">
+        <label class="form-check-label" for="pr-1">$10 - $100</label>
+      </li>
+      <li class="filter-row form-check">
+        <input class="form-check-input" type="checkbox" id="pr-2">
+        <label class="form-check-label" for="pr-2">$100 - $200</label>
+      </li>
+      <li class="filter-row form-check">
+        <input class="form-check-input" type="checkbox" id="pr-3">
+        <label class="form-check-label" for="pr-3">$200 - $500</label>
+      </li>
+    </ul>
+    <div class="d-flex gap-2 mb-2">
+      <input type="number" class="form-control form-control-sm" placeholder="Min">
+      <input type="number" class="form-control form-control-sm" placeholder="Max">
+    </div>
+    <button type="button" class="btn btn-dark btn-sm w-100">Filter</button>
+  </div>
+
+  <!-- Size (بدون Scrollbar) -->
+  <div class="filter-section section-size">
+    <h6 class="filters-title mb-2">Size</h6>
+    <ul class="list-unstyled m-0">
+      <li class="filter-row form-check">
+        <input class="form-check-input" type="checkbox" id="sz-13">
+        <label class="form-check-label" for="sz-13">13 in (0)</label>
+      </li>
+      <li class="filter-row form-check">
+        <input class="form-check-input" type="checkbox" id="sz-14">
+        <label class="form-check-label" for="sz-14">14 in (0)</label>
+      </li>
+      <li class="filter-row form-check">
+        <input class="form-check-input" type="checkbox" id="sz-15">
+        <label class="form-check-label" for="sz-15">15 in (0)</label>
+      </li>
+      <li class="filter-row form-check">
+        <input class="form-check-input" type="checkbox" id="sz-16">
+        <label class="form-check-label" for="sz-16">16 in (0)</label>
+      </li>
+      <li class="filter-row form-check">
+        <input class="form-check-input" type="checkbox" id="sz-17">
+        <label class="form-check-label" for="sz-17">17 in (0)</label>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Storage Capacity -->
+  <div class="filter-section section-storage">
+    <h6 class="filters-title mb-2">Storage Capacity</h6>
+    <ul class="list-unstyled m-0">
+      <li class="filter-row form-check">
+        <input class="form-check-input" type="checkbox" id="st-128">
+        <label class="form-check-label" for="st-128">128 GB (0)</label>
+      </li>
+      <li class="filter-row form-check">
+        <input class="form-check-input" type="checkbox" id="st-256">
+        <label class="form-check-label" for="st-256">256 GB (0)</label>
+      </li>
+      <li class="filter-row form-check">
+        <input class="form-check-input" type="checkbox" id="st-512">
+        <label class="form-check-label" for="st-512">512 GB (0)</label>
+      </li>
+      <li class="filter-row form-check">
+        <input class="form-check-input" type="checkbox" id="st-1t">
+        <label class="form-check-label" for="st-1t">1 TB (0)</label>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Customer Rating (بدون Scrollbar) -->
+  <div class="filter-section section-rating">
+    <h6 class="filters-title mb-2">Customer Rating</h6>
+    <ul class="list-unstyled m-0">
+      <li class="filter-row form-check">
+        <input class="form-check-input" type="checkbox" id="rt-5">
+        <label class="form-check-label" for="rt-5">★★★★★ (0)</label>
+      </li>
+      <li class="filter-row form-check">
+        <input class="form-check-input" type="checkbox" id="rt-4">
+        <label class="form-check-label" for="rt-4">★★★★☆ (0)</label>
+      </li>
+      <li class="filter-row form-check">
+        <input class="form-check-input" type="checkbox" id="rt-3">
+        <label class="form-check-label" for="rt-3">★★★☆☆ (0)</label>
+      </li>
+    </ul>
+  </div>
+                    </aside>
+                    <!-- Product -->
+                    <div class="col-lg-9">
+                        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-0">
+                            <div class="col-md-3 product-categories" data-category="electronic">
+                                <div class="product-card h-100" onclick="window.location.href='#'">
+                                    <span class="discount-badge">-35%</span>
+                                    <div class="product-actions"> 
+                                        <button data-bs-toggle="popover" data-bs-content="Wishlist"><i class="fa-regular fa-heart"></i></button>
+                                        <button data-bs-toggle="popover" data-bs-content="Compare"><i class="fa-solid fa-code-compare"></i></button>
+                                        <button data-bs-toggle="popover" data-bs-content="Quick View"><i class="fa-regular fa-eye"></i></button>
+                                        <button data-bs-toggle="popover" data-bs-content="Add to Cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                                    </div>
+                                    <img src="images/imgi_34_electronic-30-6-300x300.jpg" class="img-fluid mb-3" alt="">
+                                    <h6>Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB SSD</h6>
+                                    <p class="mb-1"><strong>$999</strong> <del class="text-muted">$1,536</del></p>
+                                    <div class="text-warning">★★★★☆</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 product-categories" data-category="electronic">
+                                <div class="product-card h-100" onclick="window.location.href='#'">
+                                    <span class="discount-badge">-6%</span>
+                                    <div class="product-actions">
+                                        <button data-bs-toggle="popover" data-bs-content="Wishlist"><i class="fa-regular fa-heart"></i></button>
+                                        <button data-bs-toggle="popover" data-bs-content="Compare"><i class="fa-solid fa-code-compare"></i></button>
+                                        <button data-bs-toggle="popover" data-bs-content="Quick View"><i class="fa-regular fa-eye"></i></button>
+                                        <button data-bs-toggle="popover" data-bs-content="Add to Cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                                    </div>
+                                    <img src="images/imgi_35_electronic-14-2-300x300.jpg" class="img-fluid mb-3" alt="">
+                                    <h6>Apple Watch Series 9 GPS 45mm, Aluminum Case with Sport Band</h6>
+                                    <p class="mb-1"><strong>$890</strong> <del class="text-muted">$950</del></p>
+                                    <div class="text-warning">★★★★☆</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 product-categories" data-category="autopart">
+                                <div class="product-card h-100" onclick="window.location.href='#'">
+                                    <span class="discount-badge">-8%</span>
+                                    <div class="product-actions">
+                                        <button data-bs-toggle="popover" data-bs-content="Wishlist"><i class="fa-regular fa-heart"></i></button>
+                                        <button data-bs-toggle="popover" data-bs-content="Compare"><i class="fa-solid fa-code-compare"></i></button>
+                                        <button data-bs-toggle="popover" data-bs-content="Quick View"><i class="fa-regular fa-eye"></i></button>
+                                        <button data-bs-toggle="popover" data-bs-content="Add to Cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                                    </div>
+                                    <img src="images/imgi_36_automotive-11-300x300.jpg" class="img-fluid mb-3" alt="">
+                                    <h6>TOOLS 34 Low Profile Hydraulic Trolley....</h6>
+                                    <p class="mb-1"><strong>$767</strong> <del class="text-muted">$837</del></p>
+                                    <div class="text-warning">★★★★☆</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 product-categories" data-category="homedecor">
+                                <div class="product-card h-100" onclick="window.location.href='#'">
+                                    <span class="discount-badge">-33%</span>
+                                    <div class="product-actions">
+                                        <button data-bs-toggle="popover" data-bs-content="Wishlist"><i class="fa-regular fa-heart"></i></button>
+                                        <button data-bs-toggle="popover" data-bs-content="Compare"><i class="fa-solid fa-code-compare"></i></button>
+                                        <button data-bs-toggle="popover" data-bs-content="Quick View"><i class="fa-regular fa-eye"></i></button>
+                                        <button data-bs-toggle="popover" data-bs-content="Add to Cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                                    </div>
+                                    <img src="images/imgi_37_furniture-6-300x300.jpg" class="img-fluid mb-3" alt="">
+                                    <h6>14-inch Fasion Simplicity Quality Wall Clock, Home Decor</h6>
+                                    <p class="mb-1"><strong>$50</strong> <del class="text-muted">$75</del></p>
+                                    <div class="text-warning">★★★★☆</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 product-categories" data-category="game-accessories">
+                                <div class="product-card h-100" onclick="window.location.href='#'">
+                                    <span class="discount-badge">-35%</span>
+                                    <div class="product-actions">
+                                        <button data-bs-toggle="popover" data-bs-content="Wishlist"><i class="fa-regular fa-heart"></i></button>
+                                        <button data-bs-toggle="popover" data-bs-content="Compare"><i class="fa-solid fa-code-compare"></i></button>
+                                        <button data-bs-toggle="popover" data-bs-content="Quick View"><i class="fa-regular fa-eye"></i></button>
+                                        <button data-bs-toggle="popover" data-bs-content="Add to Cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                                    </div>
+                                    <img src="images/imgi_33_electronic-42-300x300.jpg" class="img-fluid mb-3" alt="">
+                                    <h6>Gaming Chair, Ergonomic Computer Office Desk Chair</h6>
+                                    <p class="mb-1"><strong>$129</strong> <del class="text-muted">$199</del></p>
+                                    <div class="text-warning">★★★★☆</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 product-categories" data-category="beauty-health">
+                                <div class="product-card h-100" onclick="window.location.href='#'">
+                                    <span class="discount-badge">-37%</span>
+                                    <div class="product-actions">
+                                        <button data-bs-toggle="popover" data-bs-content="Wishlist"><i class="fa-regular fa-heart"></i></button>
+                                        <button data-bs-toggle="popover" data-bs-content="Compare"><i class="fa-solid fa-code-compare"></i></button>
+                                        <button data-bs-toggle="popover" data-bs-content="Quick View"><i class="fa-regular fa-eye"></i></button>
+                                        <button data-bs-toggle="popover" data-bs-content="Add to Cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                                    </div>
+                                    <img src="images/imgi_38_cosmetics-33-300x300.jpg" class="img-fluid mb-3" alt="">
+                                    <h6>Translucent Compact Face Powder - 03 Meduim, 0.22 oz</h6>
+                                    <p class="mb-1"><strong>$9</strong> <del class="text-muted">$14</del></p>
+                                    <div class="text-warning">★★★★☆</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 product-categories" data-category="beauty-health">
+                                <div class="product-card h-100" onclick="window.location.href='#'">
+                                    <span class="discount-badge">-17%</span>
+                                    <div class="product-actions">
+                                        <button data-bs-toggle="popover" data-bs-content="Wishlist"><i class="fa-regular fa-heart"></i></button>
+                                        <button data-bs-toggle="popover" data-bs-content="Compare"><i class="fa-solid fa-code-compare"></i></button>
+                                        <button data-bs-toggle="popover" data-bs-content="Quick View"><i class="fa-regular fa-eye"></i></button>
+                                        <button data-bs-toggle="popover" data-bs-content="Add to Cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                                    </div>
+                                    <img src="images/imgi_31_cosmetics-40-1-300x300.jpg" class="img-fluid mb-3" alt="">
+                                    <h6>Allure Luminous Intense Lipstick 0.15oz</h6>
+                                    <p class="mb-1"><strong>$20</strong> <del class="text-muted">$24</del></p>
+                                    <div class="text-warning">★★★★☆</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 product-categories" data-category="beauty-health">
+                                <div class="product-card h-100" onclick="window.location.href='#'">
+                                    <span class="discount-badge">-37%</span>
+                                    <div class="product-actions">
+                                        <button data-bs-toggle="popover" data-bs-content="Wishlist"><i class="fa-regular fa-heart"></i></button>
+                                        <button data-bs-toggle="popover" data-bs-content="Compare"><i class="fa-solid fa-code-compare"></i></button>
+                                        <button data-bs-toggle="popover" data-bs-content="Quick View"><i class="fa-regular fa-eye"></i></button>
+                                        <button data-bs-toggle="popover" data-bs-content="Add to Cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                                    </div>
+                                    <img src="images/imgi_33_cosmetic-2-300x300.jpg" class="img-fluid mb-3" alt="">
+                                    <h6>Makeup Brushes Artisan Easel Elite Cosmetics</h6>
+                                    <p class="mb-1"><strong>$19</strong> <del class="text-muted">$30</del></p>
+                                    <div class="text-warning">★★★★☆</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 product-categories" data-category="autopart">
+                                <div class="product-card h-100" onclick="window.location.href='#'">
+                                    <span class="discount-badge">-17%</span>
+                                    <div class="product-actions">
+                                        <button data-bs-toggle="popover" data-bs-content="Wishlist"><i class="fa-regular fa-heart"></i></button>
+                                        <button data-bs-toggle="popover" data-bs-content="Compare"><i class="fa-solid fa-code-compare"></i></button>
+                                        <button data-bs-toggle="popover" data-bs-content="Quick View"><i class="fa-regular fa-eye"></i></button>
+                                        <button data-bs-toggle="popover" data-bs-content="Add to Cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                                    </div>
+                                    <img src="images/imgi_37_automotive-13-300x300.jpg" class="img-fluid mb-3" alt="">
+                                    <h6>High-Performance Carbon Fiber Wheels</h6>
+                                    <p class="mb-1"><strong>$499</strong> <del class="text-muted">$599</del></p>
+                                    <div class="text-warning">★★★★☆</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 product-categories" data-category="fashion">
+                                <div class="product-card h-100" onclick="window.location.href='#'">
+                                    <span class="discount-badge">-34%</span>
+                                    <div class="product-actions">
+                                        <button data-bs-toggle="popover" data-bs-content="Wishlist"><i class="fa-regular fa-heart"></i></button>
+                                        <button data-bs-toggle="popover" data-bs-content="Compare"><i class="fa-solid fa-code-compare"></i></button>
+                                        <button data-bs-toggle="popover" data-bs-content="Quick View"><i class="fa-regular fa-eye"></i></button>
+                                        <button data-bs-toggle="popover" data-bs-content="Add to Cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                                    </div>
+                                    <img src="images/imgi_38_fashion-15-4-300x300.jpg" class="img-fluid mb-3" alt="">
+                                    <h6>Athletics Embroidered Relaxed Hoodie</h6>
+                                    <p class="mb-1"><strong>$79 - $89</strong></p>
+                                    <div class="text-warning">★★★★☆</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 product-categories" data-category="beauty-health">
+                                <div class="product-card h-100" onclick="window.location.href='#'">
+                                    <span class="discount-badge">-24%</span>
+                                    <div class="product-actions">
+                                        <button data-bs-toggle="popover" data-bs-content="Wishlist"><i class="fa-regular fa-heart"></i></button>
+                                        <button data-bs-toggle="popover" data-bs-content="Compare"><i class="fa-solid fa-code-compare"></i></button>
+                                        <button data-bs-toggle="popover" data-bs-content="Quick View"><i class="fa-regular fa-eye"></i></button>
+                                        <button data-bs-toggle="popover" data-bs-content="Add to Cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                                    </div>
+                                    <img src="images/imgi_39_cosmetic-6-300x300.jpg" class="img-fluid mb-3" alt="">
+                                    <h6>Makeup Magic Skin Beautifier BB Cream Tinted Moisturizer</h6>
+                                    <p class="mb-1"><strong>$35</strong> <del class="text-muted">$46</del></p>
+                                    <div class="text-warning">★★★★☆</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 product-categories" data-category="homedecor">
+                                <div class="product-card h-100" onclick="window.location.href='#'">
+                                    <span class="discount-badge">-20%</span>
+                                    <div class="product-actions">
+                                        <button data-bs-toggle="popover" data-bs-content="Wishlist"><i class="fa-regular fa-heart"></i></button>
+                                        <button data-bs-toggle="popover" data-bs-content="Compare"><i class="fa-solid fa-code-compare"></i></button>
+                                        <button data-bs-toggle="popover" data-bs-content="Quick View"><i class="fa-regular fa-eye"></i></button>
+                                        <button data-bs-toggle="popover" data-bs-content="Add to Cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                                    </div>
+                                    <img src="images/imgi_40_furniture-3-300x300.jpg" class="img-fluid mb-3" alt="">
+                                    <h6>Studio Designs Home, Heather Studio Designs Chair</h6>
+                                    <p class="mb-1"><strong>$192</strong> <del class="text-muted">$239</del></p>
+                                    <div class="text-warning">★★★★☆</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 product-categories" data-category="homedecor">
+                                <div class="product-card h-100" onclick="window.location.href='#'">
+                                    <span class="discount-badge">-48%</span>
+                                    <div class="product-actions">
+                                        <button data-bs-toggle="popover" data-bs-content="Wishlist"><i class="fa-regular fa-heart"></i></button>
+                                        <button data-bs-toggle="popover" data-bs-content="Compare"><i class="fa-solid fa-code-compare"></i></button>
+                                        <button data-bs-toggle="popover" data-bs-content="Quick View"><i class="fa-regular fa-eye"></i></button>
+                                        <button data-bs-toggle="popover" data-bs-content="Add to Cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                                    </div>
+                                    <img src="images/imgi_38_furniture-5-300x300.jpg" class="img-fluid mb-3" alt="">
+                                    <h6>Mid Century Modern Round Dining Table in Oak</h6>
+                                    <p class="mb-1"><strong>$569</strong> <del class="text-muted">$1,099</del></p>
+                                    <div class="text-warning">★★★★☆</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 product-categories" data-category="homedecor">
+                                <div class="product-card h-100" onclick="window.location.href='#'">
+                                    <span class="discount-badge">-48%</span>
+                                    <div class="product-actions">
+                                        <button data-bs-toggle="popover" data-bs-content="Wishlist"><i class="fa-regular fa-heart"></i></button>
+                                        <button data-bs-toggle="popover" data-bs-content="Compare"><i class="fa-solid fa-code-compare"></i></button>
+                                        <button data-bs-toggle="popover" data-bs-content="Quick View"><i class="fa-regular fa-eye"></i></button>
+                                        <button data-bs-toggle="popover" data-bs-content="Add to Cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                                    </div>
+                                    <img src="images/imgi_41_196-300x300.jpg" class="img-fluid mb-3" alt="">
+                                    <h6>High seating comfort with built in armrest</h6>
+                                    <p class="mb-1"><strong>$1,456</strong> <del class="text-muted">$1,536</del></p>
+                                    <div class="text-warning">★★★★☆</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 product-categories" data-category="homedecor">
+                                <div class="product-card h-100" onclick="window.location.href='#'">
+                                    <span class="discount-badge">-26%</span>
+                                    <div class="product-actions">
+                                        <button data-bs-toggle="popover" data-bs-content="Wishlist"><i class="fa-regular fa-heart"></i></button>
+                                        <button data-bs-toggle="popover" data-bs-content="Compare"><i class="fa-solid fa-code-compare"></i></button>
+                                        <button data-bs-toggle="popover" data-bs-content="Quick View"><i class="fa-regular fa-eye"></i></button>
+                                        <button data-bs-toggle="popover" data-bs-content="Add to Cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                                    </div>
+                                    <img src="images/imgi_42_furniture-29-300x300.jpg" class="img-fluid mb-3" alt="">
+                                    <h6>Slate Table Lamp with Natural Slate Finish</h6>
+                                    <p class="mb-1"><strong>$138</strong> <del class="text-muted">$188</del></p>
+                                    <div class="text-warning">★★★★☆</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 product-categories" data-category="autopart">
+                                <div class="product-card h-100" onclick="window.location.href='#'">
+                                    <span class="discount-badge">-26%</span>
+                                    <div class="product-actions">
+                                        <button data-bs-toggle="popover" data-bs-content="Wishlist"><i class="fa-regular fa-heart"></i></button>
+                                        <button data-bs-toggle="popover" data-bs-content="Compare"><i class="fa-solid fa-code-compare"></i></button>
+                                        <button data-bs-toggle="popover" data-bs-content="Quick View"><i class="fa-regular fa-eye"></i></button>
+                                        <button data-bs-toggle="popover" data-bs-content="Add to Cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                                    </div>
+                                    <img src="images/imgi_43_autopart-8-300x300.jpg" class="img-fluid mb-3" alt="">
+                                    <h6>Rear View Side Door Mirror Light For Mercedes-Benz</h6>
+                                    <p class="mb-1"><strong>$28</strong> <del class="text-muted">$37</del></p>
+                                    <div class="text-warning">★★★★☆</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </section>
+
+              <footer class="footer py-5 text-white">
+  <div class="container">
+    <div class="row gy-4">
+      <!-- Logo & Contact -->
+      <div class="col-md-3">
+        <img class="mb-3" src="images/imgi_356_logo-300x95.png" alt="" width="100">
+        <p class="text-muted"><i class="fa fa-location-dot me-2"></i> 29 SE 2nd Ave, Miami<br>Florida 33131, United States</p>
+        <p class="text-muted"><i class="fa fa-envelope me-2"></i> info@example.com</p>
+        <p class="fw-bold fs-6"><i class="fa fa-phone me-2"></i> (+92) 3942 7879</p>
+      </div>
+
+      <!-- Shopping Links -->
+      <div class="shopping-links col-md-2 mb-0">
+        <h6 class="fw-bold">SHOPPING</h6>
+        <ul class="list-unstyled text-white">
+          <li><a href="#" class="text-white-custom">Wishlist</a></li>
+          <li><a href="#" class="text-white-custom">Shop by Brand</a></li>
+          <li><a href="#" class="text-white-custom">Offers</a></li>
+          <li><a href="#" class="text-white-custom">Track order</a></li>
+          <li><a href="#" class="text-white-custom">Size Guide</a></li>
+        </ul>
+      </div>
+
+      <!-- Information Links -->
+      <div class="information-links col-md-2">
+        <h6 class="fw-bold">INFORMATION</h6>
+        <ul class="list-unstyled text-white">
+          <li><a href="#" class="text-white-custom">Track Order</a></li>
+          <li><a href="#" class="text-white-custom">Shipping & Returns</a></li>
+          <li><a href="#" class="text-white-custom">About us</a></li>
+          <li><a href="#" class="text-white-custom">Help</a></li>
+          <li><a href="#" class="text-white-custom">Gift Cards</a></li>
+        </ul>
+      </div>
+
+      <!-- Account Links -->
+      <div class="account-links col-md-2">
+        <h6 class="fw-bold">ACCOUNT</h6>
+        <ul class="list-unstyled text-white">
+          <li><a href="#" class="text-white-custom">Cart</a></li>
+          <li><a href="#" class="text-white-custom">My account</a></li>
+          <li><a href="#" class="text-white-custom">My orders</a></li>
+          <li><a href="#" class="text-white-custom">Wishlist</a></li>
+          <li><a href="#" class="text-white-custom">Affiliate Program</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="newsletter col-md-3">
+        <h6 class="fw-bold">Let’s keep in touch</h6>
+        <form class="d-flex position-relative">
+          <input type="email" class="form-control me-2"  placeholder="enter your email address">
+          <button class="btn" type="submit"><i class="fa fa-arrow-right"></i></button>
+        </form>
+        <div class="social-icons mt-3">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+<div class="border rounded p-4 mt-4 contact-section-box">
+  <div class="row text-center text-md-start align-items-center text-white ">
+    
+    <!-- Box 1 -->
+    <div class="col-md-4 mb-3 mb-md-0">
+      <div class="d-flex flex-column flex-md-row align-items-center align-items-md-start">
+        <i class="fa fa-phone fa-2x me-md-3 mb-2 mb-md-0"></i>
+        <div>
+          <p class="fw-bold mb-1">Didn't find what you were looking for?</p>
+          <a href="#">Contact Us</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Box 2 -->
+    <div class="col-md-4 mb-3 mb-md-0">
+      <div class="d-flex flex-column flex-md-row align-items-center align-items-md-start">
+        <i class="fa fa-face-smile fa-2x me-md-3 mb-2 mb-md-0"></i>
+        <div>
+          <p class="fw-bold mb-1">How can we help you today?</p>
+          <a href="#">Help Center</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Box 3 -->
+    <div class="col-md-4">
+      <div class="d-flex flex-column flex-md-row align-items-center align-items-md-start">
+        <i class="fa fa-life-ring fa-2x me-md-3 mb-2 mb-md-0"></i>
+        <div>
+          <p class="fw-bold mb-1">We’d love to hear what you think!</p>
+          <a href="#">Give Feedback</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+    <!-- Bottom Footer -->
+    <div class="d-flex flex-column flex-md-row align-items-center justify-content-between mt-3">
+      <p class="text-muted mb-2 mb-md-0">Copyright © Merto. All Rights Reserved</p>
+      <div class="payment-icons">
+        <!-- ضع صور الدفع هنا -->
+        <img src="images/imgi_358_payment-icons-1-500x51.png" alt="PayPal">
+      </div>
+    </div>
+  </div>
+  </footer>
+    </main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"></script>
+    <script src="js/owl.carousel.min.js"></script>
+<!-- <script src="js/script.js"></script> -->
+<script src="js/script-product.js"></script>
+</body>
+</html>

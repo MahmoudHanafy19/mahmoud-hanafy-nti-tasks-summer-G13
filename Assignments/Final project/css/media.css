@@ -1,0 +1,18 @@
+/* Top Navbar */
+
+/* Main Navbar */
+@media  screen and (max-width: 992px) {
+    .main-nav-link{
+        display: none;
+    }
+}
+/* END Main Navbar */
+
+/* featured section */
+@media screen and (max-width: 990px) {
+    .feature-section .row .cols{
+        border-right: none;
+    }
+}
+
+

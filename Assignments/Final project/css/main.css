@@ -1,0 +1,735 @@
+:root{
+    --nav-serch-bar-bgcolor:#EBEEF0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+/* Top Navbar */
+.top-navbar {
+  background-color: #fff;
+  padding: 5%;
+  font-size: 104%;
+}
+
+.top-navbar form {
+  flex-grow: .5;
+  background-color: var(--nav-serch-bar-bgcolor);
+  padding: 5px 0 5px 5px;
+  border-radius: 5px;
+}
+
+.top-navbar form span {
+  width: 1px;
+  height: 35px;
+  background-color: #c5c5c5;
+
+}
+
+.top-navbar .search-bar input {
+  min-width: 200px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.top-navbar .search-bar select {
+  min-width: 150px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.top-navbar .search-bar input:focus,
+.top-navbar .search-bar select:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.top-navbar .top-navbar-contact {
+  cursor: pointer;
+}
+
+.top-navbar .top-navbar-contact i {
+  scale: 1.5;
+  /* padding-right: 5%; */
+}
+
+.top-navbar .top-navbar-contact:hover {
+  color: red;
+}
+
+nav form {
+    background-color: var(--nav-serch-bar-bgcolor);
+}
+/* END Top Navbar */
+
+/* Main Navbar */
+.navbar{
+  padding:  5px 6.4%;
+  font-size: 104%;
+}
+
+
+.navbar .list-btn{
+  color: #000;
+  font-weight: bold;
+  padding: 5px 10px;
+  transition: color .3s ease;
+}
+
+.navbar .list-btn:hover,
+.navbar .list-btn:hover i{
+  color: red;
+}
+
+/* .navbar .btn i{
+  font-weight: bold;
+  font-size: 16px;
+  padding-right: 5px;
+  color: #000;
+} */
+
+.navbar-nav .main-nav-link{
+  margin-left: 28vw;
+}
+/* END Main Navbar */
+/* main */
+/* hero section */
+.hero-section .slide{
+    background-color: #EBEEF0;
+    /* height: 73.7vh; */
+}
+.hero-section .carousel-inner .carousel-item-img1,
+.hero-section .carousel-inner .carousel-item-img2{
+    background-size: cover;
+}
+.hero-section .carousel-inner .carousel-item-img1{
+    background-color: #84A7A9;
+}
+.hero-section .carousel-inner .carousel-item-img2{
+    background-color: #D1AE90;
+}
+.hero-section .carousel-inner .carousel-item-img3{
+    background-color: #DB5847;
+}
+
+.hero-section .carousel-inner .carousel-item-img3 img{
+    background-position-x: 50%;
+}
+
+.hero-section .small-cards img{
+    /* height: 500px; */
+}
+
+.slide .carousel-indicators button{
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+    margin: 0 1%;
+}
+
+/* END hero section */
+/* feature section */
+.feature-section .row .cols{
+    border-right: 1px solid #c5c5c5;
+}
+/* END fweature section */
+
+/* category section */
+.category-slider {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.category-track {
+  display: flex;
+  transition: transform 1s ease-in-out;
+}
+
+.category-col {
+  flex: 0 0 auto;
+}
+
+.category-item {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+}
+
+.category-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.category-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+  border-radius: 100%;
+}
+
+.category-item .arrow-link {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.category-title {
+  font-weight: 500;
+  text-align: center;
+}
+
+
+.category-item:hover .overlay {
+  opacity: 1;
+}
+
+.category-item:hover + .category-title {
+  color: red;
+}
+
+
+.discount-box {
+    font-size: 1.1rem;
+}
+
+.coupon-text {
+    color: red;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: text-decoration-style 0.3s ease;
+}
+
+.coupon-text:hover {
+    text-decoration-style: dotted;
+}
+
+.copied {
+    color: red;
+    text-decoration: none;
+}
+/* END category section */
+
+/* product section */
+    .product-card {
+      position: relative;
+      border: 1px solid #eee;
+      padding: 15px;
+      background: #fff;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    .product-card:hover {
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    .product-actions {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      opacity: 0;
+      transform: translateY(-10px);
+      transition: all 0.3s ease;
+      z-index: 10;
+    }
+    .product-card:hover .product-actions {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .product-actions button {
+      background: #ccc;
+      border: none;
+      color: #fff;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      transition: background 0.3s ease;
+      position: relative;
+    }
+    .product-actions button:hover {
+      background: #000;
+    }
+    .discount-badge {
+      background: red;
+      color: #fff;
+      padding: 3px 8px;
+      font-size: 12px;
+      border-radius: 4px;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 5;
+    }
+
+
+.custom-prev, .custom-next {
+  background: #fff;
+  width: 25px;
+  height: 60px;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  color: #000;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.custom-prev { left: -12px; } 
+.custom-next { right: -12px; }
+
+.container:hover .custom-prev,
+.container:hover .custom-next {
+  opacity: 1;
+}
+
+.custom-prev:hover, .custom-next:hover {
+  background: #000;
+  color: #fff;
+}
+
+.custom-prev.swiper-button-disabled,
+.custom-next.swiper-button-disabled {
+  opacity: 0 !important;
+  pointer-events: none;
+}
+
+.custom-prev::after,
+.custom-next::after {
+  font-size: 14px;
+  font-weight: bold;
+}
+/* END product section */
+
+/* image section */
+    .custom-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      height: 100%;
+    }
+    .custom-card img {
+      transition: transform 0.4s ease;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .custom-card:hover img {
+      transform: scale(1.1);
+    }
+    /* النص في أسفل الصورة */
+    .card-overlay-bottom {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      padding: 15px;
+      text-align: center;
+      z-index: 2;
+    }
+    /* النص في أعلى الصورة */
+    .card-overlay-top {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      padding: 15px;
+      text-align: center;
+      z-index: 2;
+    }
+    /* خلفيات النصوص */
+    .overlay-dark {
+      background: rgba(0, 0, 0, 0.35);
+      color: white;
+    }
+    .overlay-light {
+      background: rgba(255, 255, 255, 0.7);
+      color: black;
+    }
+/* END image section */
+
+/* new arrivals section */
+/* روابط التبويبات */
+.newarrivals-link {
+  text-decoration: none;
+  color: #000;
+  position: relative;
+  font-weight: 500;
+}
+
+.newarrivals-link:hover {
+  color: #000;
+}
+
+.newarrivals-link::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.3s;
+}
+
+.newarrivals-link:hover::after {
+  width: 100%;
+}
+
+.newarrivals-link.active::after {
+  width: 100%;
+}
+
+.newarrivals-seeall {
+  transition: all 0.3s ease;
+    text-decoration: none;
+  color: #000;
+  position: relative;
+  font-weight: 500;
+}
+
+.newarrivals-seeall:hover {
+  color: #000;
+}
+
+.newarrivals-seeall::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.3s;
+}
+
+.newarrivals-seeall:hover::after {
+  width: 100%;
+}
+
+/* الكروت */
+.newarrivals-card {
+  width: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  background: #fff;
+  position: relative;
+}
+
+
+
+.newarrivals-card:hover {
+  transform: translateY(-5px);
+  z-index: 10;
+}
+
+
+
+.newarrivals-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.newarrivals-title {
+  font-size: 0.9rem;
+}
+
+.newarrivals-actions {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  padding: 0.5rem;
+  background-color: #ffffff;
+  transition: bottom 0.3s ease;
+}
+
+
+
+.newarrivals-actions .btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #b4b3b3;
+  color: #000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.newarrivals-card:hover .newarrivals-actions {
+  bottom: 0;
+}
+
+.newarrivals-actions .btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+/* END new arrivals section */
+
+/* hoodie-slider-section */
+    /* حاوية السلايدر */
+    .hoodie-slider-container {
+        position: relative;
+        overflow: hidden;
+        /* padding: 50px 0; */
+        background-color: #EBEEF0;
+    }
+
+    /* كلمة Hoodie الكبيرة */
+    .hoodie-big-text {
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        font-size: 180px;
+        font-weight: 900;
+        letter-spacing: 5px;
+        color: rgba(255, 255, 255, 0.514);
+        pointer-events: none;
+        z-index: 2;
+        white-space: nowrap;
+    }
+
+    /* صورة المنتج */
+    .hoodie-carousel-item img {
+        max-height: 650px;
+        object-fit: contain;
+        z-index: 1;
+        position: relative;
+        left: -30%;
+        transform: translateX(50%);
+        scale: 1.2;
+    }
+
+    /* دايرة الخصم */
+    .hoodie-discount-circle {
+        position: absolute;
+        top: 37%;
+        left: 57%;
+        background: rgba(255, 0, 0, 0.486);
+        color: white;
+        font-weight: bold;
+        border-radius: 50%;
+        padding: 20px 25px;
+        font-size: 22px;
+        z-index: 3;
+        transition: transform 1s ease-in-out;
+    }
+    .hoodie-rotate { transform: rotate(360deg); }
+
+    /* كارت المنتج */
+    .hoodie-product-card {
+        position: absolute;
+        top: 50%;
+        right: 5%;
+        transform: translateY(-50%);
+        background: white;
+        padding: 35px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        z-index: 4;
+        width: 400px;
+    }
+
+    /* صور الاختيار الصغيرة */
+    .hoodie-thumb-img {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+        cursor: pointer;
+        border: 2px solid rgba(221, 220, 220, 0.466);
+        border-radius: 5px;
+        margin-right: 5px;
+        transition: border 0.3s;
+    }
+    .hoodie-thumb-img:hover {
+        border: 2px solid black;
+    }
+
+    /* زر الشراء */
+    .hoodie-buy-btn {
+        background: black;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: all 0.3s;
+    }
+    .hoodie-buy-btn:hover {
+        background: white;
+        color: black;
+        border: 2px solid black;
+    }
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: none; /* نشيل الصورة الافتراضية */
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-control-prev-icon::after {
+    content: '‹'; /* سهم لليسار */
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+}
+
+.carousel-control-next-icon::after {
+    content: '›'; /* سهم لليمين */
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+}
+    .carousel-control-next {
+      left: 90%;
+    }
+
+    .carousel-control-prev {
+      left: -5%;
+    }
+/* END hoodie-slider-section */
+
+/* custom-search-section */
+    .custom-search-section {
+        text-align: center;
+        padding: 60px 20px;
+        background-color: #EBEEF0;
+    }
+    .custom-search-box {
+        max-width: 590px;
+        margin: 0 auto;
+        display: flex;
+        border-radius: 6px;
+        overflow: hidden;
+        background: white;
+    }
+    .custom-search-box input {
+        border: none;
+        outline: none;
+        padding: 10px 15px;
+        flex: 1;
+    }
+    .custom-search-box button {
+        border: none;
+        background: black;
+        color: white;
+        padding: 0 15px;
+        transition: 0.3s;
+    }
+    .custom-search-box button:hover {
+        background: red;
+    }
+    .custom-categories {
+        margin-top: 20px;
+    }
+    .custom-categories a {
+        text-decoration: none;
+        color: black;
+        transition: 0.3s;
+        margin-bottom: 10px;
+    }
+    .custom-categories a:hover {
+        color: red;
+    }
+    .custom-categories span {
+        margin: 0 8px;
+        color: #888;
+    }
+/* END custom-search-section */
+
+/* footer */
+        .footer {
+      background-color: #181c1f;
+      padding: 50px 0 20px;
+      font-size: 14px;
+    }
+    .footer a {
+      color: #ccc;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .footer a:hover {
+      color: red;
+    }
+    .footer .social-icons a {
+      font-size: 18px;
+      margin-right: 15px;
+    }
+    .payment-icons img {
+      height: 30px;
+      margin-left: 8px;
+    }
+
+    .contact-section-box {
+      padding: 20px;
+      text-align: center;
+      height: 100%;
+    }
+    .contact-box i {
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+
+    footer .newsletter form input {
+      background-color: #181c1f;
+      border: 1px solid #ccc;
+      color: white;
+    }
+    footer .newsletter form button {
+      position: absolute;
+      left: 83%;
+      top: 15%;
+      padding: 0 3%;
+      background-color: #181c1f;
+      color: white;
+    }
+
+    footer .newsletter form input:focus,
+    footer .newsletter form button:focus {
+      outline: none;
+      box-shadow: none;
+      background-color: #181c1f;
+      color: white;
+    }
+
+    footer .newsletter form button:hover {
+      color: red;
+    }
+    
+    footer .text-white-custom{
+      color: white;
+    }
+/* END footer */
+/* END main */
